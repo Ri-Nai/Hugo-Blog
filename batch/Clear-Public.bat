@@ -22,4 +22,5 @@ for /d %%i in (*) do (
 echo Done.
 endlocal
 cd ..
+rmdir .\resources /s /q
 hugo

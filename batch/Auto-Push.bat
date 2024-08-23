@@ -1,3 +1,4 @@
+cd ..
 hugo
 cd D:\Code\Ri-Nai.github.io\public
 set /p input=input commit message

@@ -1,7 +1,7 @@
 baseurl: https://ri-nai.github.io
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 3
+paginate: 5
 title: Reina
 copyright: Reina
 
@@ -275,6 +275,6 @@ markup:
         ordered: true
         startLevel: 2
     highlight:
-        style: onedark
+        style: monokai
 frontmatter:
   lastmod: [":fileModTime", "lastmod"]

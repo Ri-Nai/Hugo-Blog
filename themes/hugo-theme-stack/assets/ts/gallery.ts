@@ -102,7 +102,6 @@ class StackGallery {
             /// Wrap img tag with <a> tag if image was not wrapped by <a> tag
             if (!hasLink) {
                 figure.className = 'gallery-image';
-
                 const a = document.createElement('a');
                 a.href = img.src;
                 a.setAttribute('target', '_blank');
@@ -138,7 +137,7 @@ class StackGallery {
 
     /**
      * Wrap adjacent figure tags with div.gallery
-     * @param figures 
+     * @param figures
      */
     public static wrap(figures: HTMLElement[]) {
         const galleryContainer = document.createElement('div');

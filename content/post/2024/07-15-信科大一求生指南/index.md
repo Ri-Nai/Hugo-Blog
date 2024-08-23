@@ -9,7 +9,7 @@ math:
 license:
 hidden: false
 draft: false
-categories: [""]
+categories: ["课余沉思", "学习笔记"]
 tags: [""]
 ---
 🚜可能没有施工<br>
