@@ -1,0 +1,53 @@
+{{ $file := .Get 0 }}
+<!-- 分割路径为数组 -->
+{{ $files := split $file "/" }}
+{{ $file_name := index $files (sub (len $files) 1) }}
+{{ $show_name := $file_name }}
+{{ if in $file_name "|" }}
+    {{ $parts := split $file_name "|" }}
+    {{ $file_name = index $parts 0 }}
+    {{ $show_name = index $parts 1 }}
+    {{ $parts = split $file "|" }}
+    {{ $file = index $parts 0 }}
+{{ end }}
+{{ $title := "" }}
+{{ if in $file_name "#" }}
+    {{ $parts := split $file_name "#" }}
+    {{ $file_name = index $parts 0 }}
+    {{ $title = index $parts 1 }}
+    {{ $title = printf "#%s" $title }}
+    {{ $parts = split $file "#" }}
+    {{ $file = index $parts 0 }}
+{{ end }}
+
+{{ $slug := .Page.Params.Slug }}
+{{ $slugs := split $slug "/" }}
+{{ $rel_slug := "" }}
+
+{{ range $index, $part := $slugs }}
+    {{ if not (eq $index 0) }}
+        {{ $rel_slug = print $rel_slug "/" $part }}
+    {{ end }}
+{{ end }}
+
+{{ if not (eq $rel_slug "") }}
+{{ $rel_slug = substr $rel_slug 1}}
+{{ end }}
+{{ $rel_file := "" }}
+{{ $file_parts := split $file "/" }}
+{{ $rel_slug_parts := split $rel_slug "/" }}
+{{ if eq $rel_slug "" }}
+    {{ $rel_slug_parts = slice }}
+{{ end }}
+{{ $bool_flag := 1 }}
+{{ range $i, $part := $file_parts }}
+    {{ if and (eq $bool_flag 1) (lt $i (len $rel_slug_parts)) (eq $part (index $rel_slug_parts $i)) }}
+        {{ continue }}
+    {{ else if and (eq $bool_flag 1) }}
+        {{ $bool_flag = 0 }}
+        {{ $rel_file = (print (strings.Repeat (sub (len $rel_slug_parts) $i) "../") $rel_file) }}
+    {{ end }}
+    {{ $rel_file = (print $rel_file (index $file_parts $i) "/") }}
+{{ end }}
+{{ $content := printf "[%s](%s%s)" $show_name $rel_file $title | safeHTML }}
+{{ $content | $.Page.RenderString }}

@@ -20,14 +20,11 @@
 
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
-    </section>
-    <canvas id="live2d-container"
-        style="position: fixed; bottom: 0; right: 0; width: 250px; height: 400px; pointer-events: auto; z-index: 1;">
-    </canvas>
-    <div id="toggle-button"
-        style="position: fixed; bottom: 400px; right: -22px; width: 30px; height: 30px; cursor: pointer; z-index: 2;">
-        ✖
-    </div>
+        <canvas id="live2d-container" style="position: fixed; bottom: 0; right: 0; width: calc(5 * min(40vw, 40vh) / 8); height: calc(min(40vw, 40vh)); pointer-events: auto; z-index: 1; touch-action: none; cursor: inherit;">
+        </canvas>
+        <div id="toggle-button" style="position: fixed; bottom: calc(min(40vw, 40vh)); right: -18px; width: 30px; height: 30px; cursor: pointer; z-index: 2;">
+            <svg xmlns="http://www.w3.org/2000/svg" width=60% height=60% viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
+        </div>
     <style>
         .text-bubble {
             position: fixed;
@@ -42,20 +39,21 @@
         }
 
         #toggle-button {
-            font-size: 16px;
             text-align: center;
-            line-height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 居中对齐 */
             background-color: #ff69b4;
             opacity: 0.3;
             color: white;
             border-radius: 50%;
             transition: 600ms;
-            user-select:none;
-
+            user-select: none;
+            padding: 0;
         }
 
         #toggle-button:hover {
-            transform: translate(-22px, 0);
+            transform: translate(-18px, 0);
             opacity: 1;
         }
 
@@ -134,12 +132,12 @@
                     if (model2.parent) {
                         app.stage.removeChild(model2);
                         container.style.visibility = 'hidden';
-                        toggleButton.innerHTML = '🞅'; // Change to plus sign when model is hidden
+                        toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width=50% height=50% viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>'; // Change to plus sign when model is hidden
                     } else {
                         container.style.visibility = 'visible'
                         // container.style.display = 'block';
                         app.stage.addChild(model2);
-                        toggleButton.innerHTML = '✖'; // Change to cross sign when model is shown
+                        toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width=60% height=60% viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>'; // Change to cross sign when model is shown
                     }
                 });
 

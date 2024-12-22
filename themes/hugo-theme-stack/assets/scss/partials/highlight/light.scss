@@ -1,14 +1,14 @@
 /*
-*   Style: monokailight
-*   https://xyproto.github.io/splash/docs/monokailight.html
+*   Style: Ayu Light
+*   https://github.com/ayu-theme/ayu
 */
 
-$color: #272822;
-$background-color: #fafafa;
-$error-color: #960050;
-$keyword-color: #00a8c8;
-$text-color: #111111;
-$name-color: #75af00;
-$literal-color: #d88200;
+$color: #272822;  // 字体颜色（深色）
+$background-color: #fafafa;  // 背景颜色（浅色）
+$error-color: #bb0064;  // 错误色（粉红色）
+$keyword-color: #1ea479;  // 关键字颜色（淡蓝色）
+$text-color: $color;  // 文字颜色（与字体颜色相同）
+$name-color: #1a1a85;  // 标识颜色（淡蓝色）
+$literal-color: #86B300;  // 文本文字常量颜色（明黄色）
 
 @import "common.scss";

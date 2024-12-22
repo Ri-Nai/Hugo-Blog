@@ -1,13 +1,27 @@
 {{- partial "helper/external" (dict "Context" . "Namespace" "KaTeX") -}}
 <script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.body, {
-            delimiters: [
-                { left: "$$", right: "$$", display: true },
-                { left: "$", right: "$", display: false },
-                { left: "\\(", right: "\\)", display: false },
-                { left: "\\[", right: "\\]", display: true }
-            ],
-            ignoredClasses: ["gist"]
-        });})
+        const elements = document.body.querySelectorAll(':not(.gist)');  // 获取要渲染的元素
+        let batchSize = 10;  // 每次处理的公式数量
+        let index = 0;
+
+        function renderNextBatch() {
+            for (let i = 0; i < batchSize && index < elements.length; i++, index++) {
+                renderMathInElement(elements[index], {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+            if (index < elements.length) {
+                setTimeout(renderNextBatch, 50);  // 每次延迟 50ms 渲染
+            }
+        }
+
+        renderNextBatch();  // 开始分批渲染
+    });
 </script>

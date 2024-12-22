@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-slug: "{{ replace .Name "-" " " | title }}"
+title: "{{ replaceRE "-" " " (substr .Name 6) | title }}"
+slug: "{{ replaceRE "-" " " .Name | title }}"
 description:
 date: "{{ .Date }}"
 lastmod: "{{ .Date }}"

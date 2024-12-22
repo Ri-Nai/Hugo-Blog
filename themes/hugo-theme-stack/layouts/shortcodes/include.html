@@ -1,0 +1,26 @@
+{{ $file := .Get 0 }}
+
+{{ $slug := .Page.Params.Slug }}
+{{ $slugs := split $slug "/" }}
+{{ $rel_slug := "" }}
+
+
+{{ range $index, $part := $slugs }}
+    {{ if not (eq $index 0) }}
+        {{ $rel_slug = print $rel_slug "/" $part }}
+    {{ end }}
+{{ end }}
+
+{{ if not (eq $rel_slug "") }}
+    {{ $rel_slug = substr $rel_slug 1}}
+{{ end }}
+
+{{ $rel_file := $file }}
+{{ if not (eq $rel_slug "") }}
+    {{ $rel_file = substr $file (add (countrunes $rel_slug) 1) }}
+{{ end }}
+{{ $current_dir := path.Dir .Page.File.Path }}
+{{ $target_file := path.Join $current_dir $rel_file }}
+<!-- 读取文件内容并处理 -->
+{{ $content := readFile $target_file | replaceRE "^---[\\s\\S]+?---" "" | safeHTML }}
+{{ $content | $.Page.RenderString }}
