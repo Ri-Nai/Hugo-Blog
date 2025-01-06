@@ -39,9 +39,6 @@
     {{ partialCached "footer/footer" . }}
 
     {{ partialCached "article/components/photoswipe" . }}
-    {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
-        <p> 最后更新于 {{ .Lastmod.Year }} 年 {{ printf "%d" .Lastmod.Month }} 月 {{ .Lastmod.Day }} 日</p>
-    {{ end }}
 {{ end }}
 {{ define "right-sidebar" }}
     {{ if .Scratch.Get "hasWidget" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}{{ end}}

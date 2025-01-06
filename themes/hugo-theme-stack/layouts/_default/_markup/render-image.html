@@ -1,5 +1,5 @@
 {{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
-{{- $Permalink := .Destination | relURL | safeURL -}}
+{{- $Permalink := .Destination | safeURL -}}
 {{- $alt := .PlainText | safeHTML -}}
 {{- $Width := 0 -}}
 {{- $Height := 0 -}}
@@ -7,7 +7,9 @@
 
 {{/* SVG and external images won't work with gallery layout, because their width and height attributes are unknown */}}
 {{- $galleryImage := false -}}
-
+{{- if not $image -}}
+	
+{{- end -}}
 {{- if $image -}}
 	{{- $notSVG := ne (path.Ext .Destination) ".svg" -}}
 	{{- $Permalink = $image.RelPermalink -}}

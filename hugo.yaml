@@ -45,7 +45,7 @@ services:
 permalinks:
     post: /p/:slug/
     page: /:slug/
-
+    section: /p/:section/:slug/
 params:
     mainSections:
         - post

@@ -1,9 +1,9 @@
 {{ $file := .Get 0 }}
+{{ $title := .Get 1 }}
 
 {{ $slug := .Page.Params.Slug }}
 {{ $slugs := split $slug "/" }}
 {{ $rel_slug := "" }}
-
 
 {{ range $index, $part := $slugs }}
     {{ if not (eq $index 0) }}
@@ -23,4 +23,11 @@
 {{ $target_file := path.Join $current_dir $rel_file }}
 <!-- 读取文件内容并处理 -->
 {{ $content := readFile $target_file | replaceRE "^---[\\s\\S]+?---" "" | safeHTML }}
-{{ $content | $.Page.RenderString }}
+
+{{ if $title }}
+    {{ $pattern := printf "(?s)#+\\s*%s(.*?)(#+|$)" (printf `\Q%s\E` $title) }}
+    {{ $matches := index (findRESubmatch $pattern $content) 0 }}
+    {{ $content }}
+{{ else }}
+    {{ $content | $.Page.RenderString }}
+{{ end }}

@@ -1,0 +1,14 @@
+{{ $file := .Get 0 }}
+{{ $slug := .Page.Params.Slug }}
+{{ $file_name := substr $file 0 (sub (countrunes $file) 4) }}
+{{ $depth := 0 }}
+{{ if in $slug "/" }}
+    {{ $depth = sub (len (split $slug "/")) 1}}
+{{ else }}
+    {{ $depth = 0 }}
+{{ end }}
+
+{{ $rel_path := print (strings.Repeat $depth "../") "imgs/" }}
+{{ $rel_file := print $rel_path $file }}
+{{ $content := printf "![%s](%s)" $file_name $rel_file | safeHTML }}
+{{ $content | $.Page.RenderString }}
