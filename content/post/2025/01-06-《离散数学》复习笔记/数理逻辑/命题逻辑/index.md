@@ -1,6 +1,6 @@
 ---
 title: "命题逻辑"
-slug: "01 06 《离散数学》复习笔记/数理逻辑/命题逻辑"
+slug: "2025/01 06 《离散数学》复习笔记/数理逻辑/命题逻辑"
 date: "2025-01-06T12:00:18+08:00"
 lastmod: "2025-01-06T12:00:18+08:00"
 hidden: true
@@ -85,49 +85,34 @@ tags: ["离散数学", "计算机科学"]
 
 ### 基本等值式
 $$\begin{aligned}
-双重否定律 & & \neg(\neg A) & \Leftrightarrow A  \newline  \newline 
-
-幂等律 & & A \land A & \Leftrightarrow A  \newline 
-      & & A \lor A & \Leftrightarrow A  \newline  \newline 
-
-交换律 & & A \land B & \Leftrightarrow B \land A  \newline 
-      & & A \lor B & \Leftrightarrow B \lor A  \newline  \newline 
-
-结合律 & & A \land (B \land C) & \Leftrightarrow (A \land B) \land C  \newline 
-      & & A \lor (B \lor C) & \Leftrightarrow (A \lor B) \lor C  \newline  \newline 
-
-分配律 & & A \land (B \lor C) & \Leftrightarrow (A \land B) \lor (A \land C)  \newline 
-      & & A \lor (B \land C) & \Leftrightarrow (A \lor B) \land (A \lor C)  \newline  \newline 
-
-吸收律 & & A \land (A \lor B) & \Leftrightarrow A  \newline 
-      & & A \lor (A \land B) & \Leftrightarrow A  \newline  \newline 
-
-零律 & & A \land 0 & \Leftrightarrow 0  \newline 
-    & & A \lor 1 & \Leftrightarrow 1  \newline  \newline 
-
-同一律 & & A \land 1 & \Leftrightarrow A  \newline 
-      & & A \lor 0 & \Leftrightarrow A  \newline  \newline 
-
-排中律 & & A \lor \neg A & \Leftrightarrow 1  \newline 
-      & & A \land \neg A & \Leftrightarrow 0  \newline  \newline 
-
-矛盾律 & & A \land \neg A & \Leftrightarrow 0  \newline 
-      & & A \lor \neg A & \Leftrightarrow 1  \newline  \newline 
-
-蕴含等值式 & & A \to B & \Leftrightarrow \neg A \lor B  \newline 
-          & & \neg(A \to B) & \Leftrightarrow A \land \neg B  \newline  \newline 
-
-德摩根律 & & \neg(A \land B) & \Leftrightarrow \neg A \lor \neg B  \newline 
-        & & \neg(A \lor B) & \Leftrightarrow \neg A \land \neg B  \newline  \newline 
-
-等价等值式 & & A \leftrightarrow B & \Leftrightarrow (A \to B) \land (B \to A)  \newline 
-
-假言易位 & & A \to B & \Leftrightarrow \neg B \to \neg A  \newline 
-        & & \neg(A \to B) & \Leftrightarrow A \land \neg B  \newline  \newline 
-
-等价否定 & & A \leftrightarrow B & \Leftrightarrow \neg A \leftrightarrow \neg B  \newline 
-
-归谬论 & & A \to B & \Leftrightarrow \neg B \to \neg A  \newline 
+双重否定律 & & \neg(\neg A) & \Leftrightarrow A \newline \newline 
+幂等律 & & A \land A & \Leftrightarrow A \newline 
+ & & A \lor A & \Leftrightarrow A \newline \newline 
+交换律 & & A \land B & \Leftrightarrow B \land A \newline 
+ & & A \lor B & \Leftrightarrow B \lor A \newline \newline 
+结合律 & & A \land (B \land C) & \Leftrightarrow (A \land B) \land C \newline 
+ & & A \lor (B \lor C) & \Leftrightarrow (A \lor B) \lor C \newline \newline 
+分配律 & & A \land (B \lor C) & \Leftrightarrow (A \land B) \lor (A \land C) \newline 
+ & & A \lor (B \land C) & \Leftrightarrow (A \lor B) \land (A \lor C) \newline \newline 
+吸收律 & & A \land (A \lor B) & \Leftrightarrow A \newline 
+ & & A \lor (A \land B) & \Leftrightarrow A \newline \newline 
+零律 & & A \land 0 & \Leftrightarrow 0 \newline 
+ & & A \lor 1 & \Leftrightarrow 1 \newline \newline 
+同一律 & & A \land 1 & \Leftrightarrow A \newline 
+ & & A \lor 0 & \Leftrightarrow A \newline \newline 
+排中律 & & A \lor \neg A & \Leftrightarrow 1 \newline 
+ & & A \land \neg A & \Leftrightarrow 0 \newline \newline 
+矛盾律 & & A \land \neg A & \Leftrightarrow 0 \newline 
+ & & A \lor \neg A & \Leftrightarrow 1 \newline \newline 
+蕴含等值式 & & A \to B & \Leftrightarrow \neg A \lor B \newline 
+ & & \neg(A \to B) & \Leftrightarrow A \land \neg B \newline \newline 
+德摩根律 & & \neg(A \land B) & \Leftrightarrow \neg A \lor \neg B \newline 
+ & & \neg(A \lor B) & \Leftrightarrow \neg A \land \neg B \newline \newline 
+等价等值式 & & A \leftrightarrow B & \Leftrightarrow (A \to B) \land (B \to A) \newline 
+假言易位 & & A \to B & \Leftrightarrow \neg B \to \neg A \newline 
+ & & \neg(A \to B) & \Leftrightarrow A \land \neg B \newline \newline 
+等价否定 & & A \leftrightarrow B & \Leftrightarrow \neg A \leftrightarrow \neg B \newline 
+归谬论 & & A \to B & \Leftrightarrow \neg B \to \neg A \newline 
 \end{aligned}$$
 
 ### 析取范式与合取范式
@@ -201,9 +186,9 @@ $$S = \lbrace \lor, \land, \to, \leftrightarrow \rbrace$$ 不是完备集，恒�
 
 $$S = \lbrace \uparrow \rbrace$$
 证明：$$\begin{aligned}
-     \neg A &\Leftrightarrow A \uparrow A \newline 
-    A \land B &\Leftrightarrow \neg (A \uparrow B) \newline 
-     A \lor B &\Leftrightarrow \neg (\neg A \uparrow \neg B) \newline 
+ \neg A &\Leftrightarrow A \uparrow A \newline 
+ A \land B &\Leftrightarrow \neg (A \uparrow B) \newline 
+ A \lor B &\Leftrightarrow \neg (\neg A \uparrow \neg B) \newline 
 \end{aligned}$$
 
 #### 最小连接词完备集
@@ -230,17 +215,17 @@ $A\_1, A\_2, \cdots, A\_n$ 称作**前提**，$B$ 称作**结论**
 
 ### 推理定律
 $$\begin{aligned}
-附加律 & & A &\Rightarrow A \land B  \newline 
-化简律 & & A \land B &\Rightarrow A  \newline 
-假言推理 & & A \land (A \to B) &\Rightarrow B  \newline 
-拒取式 & & \neg A \land \neg B &\Rightarrow \neg (A \land B)  \newline 
-析取三段论 & & A \lor B, \neg A &\Rightarrow B  \newline 
-假言三段论 & & A \to B, B \to C &\Rightarrow A \to C  \newline 
-等价三段论 & & A \leftrightarrow B, B \leftrightarrow C &\Rightarrow A \leftrightarrow C  \newline 
-构造性二难 & & A \to B, C \to D, A \lor C &\Rightarrow B \lor D  \newline 
-         & & A \to B, \neg A \to B &\Rightarrow B  \newline 
-破坏性二难 & & A \to B, C \to D, \neg B \lor \neg D &\Rightarrow \neg A \lor \neg C  \newline 
-         & & A \to B, \neg B \to A &\Rightarrow A \leftrightarrow B  \newline 
+附加律 & & A &\Rightarrow A \land B \newline 
+化简律 & & A \land B &\Rightarrow A \newline 
+假言推理 & & A \land (A \to B) &\Rightarrow B \newline 
+拒取式 & & \neg A \land \neg B &\Rightarrow \neg (A \land B) \newline 
+析取三段论 & & A \lor B, \neg A &\Rightarrow B \newline 
+假言三段论 & & A \to B, B \to C &\Rightarrow A \to C \newline 
+等价三段论 & & A \leftrightarrow B, B \leftrightarrow C &\Rightarrow A \leftrightarrow C \newline 
+构造性二难 & & A \to B, C \to D, A \lor C &\Rightarrow B \lor D \newline 
+ & & A \to B, \neg A \to B &\Rightarrow B \newline 
+破坏性二难 & & A \to B, C \to D, \neg B \lor \neg D &\Rightarrow \neg A \lor \neg C \newline 
+ & & A \to B, \neg B \to A &\Rightarrow A \leftrightarrow B \newline 
 \end{aligned}$$
 
 ### {{< linking "数理逻辑/形式系统" >}}

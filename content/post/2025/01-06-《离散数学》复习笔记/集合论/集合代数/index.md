@@ -1,6 +1,6 @@
 ---
 title: "集合代数"
-slug: "01 06 《离散数学》复习笔记/集合论/集合代数"
+slug: "2025/01 06 《离散数学》复习笔记/集合论/集合代数"
 date: "2025-01-06T12:00:18+08:00"
 lastmod: "2025-01-06T12:00:18+08:00"
 hidden: true
@@ -70,14 +70,13 @@ $$P(A) = \lbrace x \ | \ x \subseteq A \rbrace$$
 
 ## 集合的运算
 $$\begin{aligned}
-并 & & A \cup B &= \lbrace x \ | \ x \in A \lor x \in B \rbrace  \newline 
-交 & & A \cap B &= \lbrace x \ | \ x \in A \land x \in B \rbrace  \newline 
-相对补\ /\ 差 & & A - B &= \lbrace x \ | \ x \in A \land x \notin B \rbrace  \newline 
-绝对补 & & \overline{A} &= ~A = E - A  \newline 
-对称差 & & A \oplus B &= (A - B) \cup (B - A)  \newline   \newline  
-
-广义并 & & \bigcup_{i=1}^n A_i &= \lbrace x \ | \ \exists z(z \in A \land x \in z) \rbrace  \newline 
-广义交 & & \bigcap_{i=1}^n A_i &= \lbrace x \ | \ \forall z(z \in A \to x \in z) \rbrace  \newline 
+并 & & A \cup B &= \lbrace x \ | \ x \in A \lor x \in B \rbrace \newline 
+交 & & A \cap B &= \lbrace x \ | \ x \in A \land x \in B \rbrace \newline 
+相对补\ /\ 差 & & A - B &= \lbrace x \ | \ x \in A \land x \notin B \rbrace \newline 
+绝对补 & & \overline{A} &= ~A = E - A \newline 
+对称差 & & A \oplus B &= (A - B) \cup (B - A) \newline \newline 
+广义并 & & \bigcup\_{i=1}^n A\_i &= \lbrace x \ | \ \exists z(z \in A \land x \in z) \rbrace \newline 
+广义交 & & \bigcap\_{i=1}^n A\_i &= \lbrace x \ | \ \forall z(z \in A \to x \in z) \rbrace \newline 
 \end{aligned}$$
 
 1. $\displaystyle \bigcup \varnothing = \varnothing$，$\displaystyle \bigcap \varnothing$ 无意义
@@ -93,11 +92,11 @@ $$\begin{aligned}
 1. 文氏图法
 2. 包含排斥原理（容斥原理）
 $$\begin{aligned}
-\left| \overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n} \right| =& \left| E \right|  \newline  &- \sum_{i=1}^n \left| A_i \right|  \newline  &+ \sum_{1 \leq i < j \leq n} \left| A_i \cap A_j \right|  \newline  &- \cdots   \newline  &+ (-1)^n \left| A_1 \cap A_2 \cap \cdots \cap A_n \right|
+\left| \overline{A\_1} \cap \overline{A\_2} \cap \cdots \cap \overline{A\_n} \right| =& \left| E \right| \newline &- \sum\_{i=1}^n \left| A\_i \right| \newline &+ \sum\_{1 \leq i < j \leq n} \left| A\_i \cap A\_j \right| \newline &- \cdots \newline &+ (-1)^n \left| A\_1 \cap A\_2 \cap \cdots \cap A\_n \right|
 \end{aligned}$$
 推论：$n$ 个集合的并的元素个数
 $$\begin{aligned}
-\left| A_1 \cup A_2 \cup \cdots \cup A_n \right| =& \sum_{i=1}^n \left| A_i \right|  \newline  &- \sum_{1 \leq i < j \leq n} \left| A_i \cap A_j \right|  \newline  &+ \cdots   \newline  &+ (-1)^{n-1} \left| A_1 \cap A_2 \cap \cdots \cap A_n \right|
+\left| A\_1 \cup A\_2 \cup \cdots \cup A\_n \right| =& \sum\_{i=1}^n \left| A\_i \right| \newline &- \sum\_{1 \leq i < j \leq n} \left| A\_i \cap A\_j \right| \newline &+ \cdots \newline &+ (-1)^{n-1} \left| A\_1 \cap A\_2 \cap \cdots \cap A\_n \right|
 \end{aligned}$$
 
 $$\left| A\_1 \cup A\_2 \cup \cdots \cup A\_n \right| = \left|E\right| - \left| \overline{A\_1} \cap \overline{A\_2} \cap \cdots \cap \overline{A\_n} \right|$$
@@ -141,11 +140,11 @@ $$\left| A\_1 \cup A\_2 \cup \cdots \cup A\_n \right| = \left|E\right| - \left| 
 
 $$\begin{aligned}
 \text{证：任取 } x \newline 
-x \in A \cup (A \cap B) \Leftrightarrow &x \in A \lor x \in A \cap B  \newline 
-\Leftrightarrow &x \in A \lor (x \in A \land x \in B)  \newline 
-\Leftrightarrow &(x \in A \land x \in E) \lor (x \in A \land x \in B)  \newline 
-\Leftrightarrow &x \in A \land (x \in E \lor x \in B)  \newline 
-\Leftrightarrow &x \in A  \newline 
+x \in A \cup (A \cap B) \Leftrightarrow &x \in A \lor x \in A \cap B \newline 
+\Leftrightarrow &x \in A \lor (x \in A \land x \in B) \newline 
+\Leftrightarrow &(x \in A \land x \in E) \lor (x \in A \land x \in B) \newline 
+\Leftrightarrow &x \in A \land (x \in E \lor x \in B) \newline 
+\Leftrightarrow &x \in A \newline 
 \text{因此得 } A \cup (A \cap B) = A.
 \end{aligned}$$
 

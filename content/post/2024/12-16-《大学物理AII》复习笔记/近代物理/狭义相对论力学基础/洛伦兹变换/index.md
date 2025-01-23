@@ -1,6 +1,6 @@
 ---
 title: "洛伦兹变换"
-slug: "12 16 《大学物理AII》复习笔记/近代物理/狭义相对论力学基础/洛伦兹变换"
+slug: "2024/12 16 《大学物理AII》复习笔记/近代物理/狭义相对论力学基础/洛伦兹变换"
 date: "2024-12-24T19:29:30+08:00"
 lastmod: "2024-12-24T19:29:30+08:00"
 hidden: true
@@ -27,7 +27,7 @@ y' &=& y  \newline
 z' &=& z  \newline 
 t' &=& \frac{t-\frac{u}{c^2}x}{\sqrt{1-\frac{u^2}{c^2}}}
 \end{array}
-\right\rbrace
+\right \rbrace
 \quad \leftrightarrows \quad
 \left\lbrace
 \begin{array}{ll}

@@ -6,7 +6,7 @@
 {{ $rel_slug := "" }}
 
 {{ range $index, $part := $slugs }}
-    {{ if not (eq $index 0) }}
+    {{ if gt $index 1 }}
         {{ $rel_slug = print $rel_slug "/" $part }}
     {{ end }}
 {{ end }}

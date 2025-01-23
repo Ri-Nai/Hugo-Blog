@@ -193,6 +193,11 @@
 
         span {
             flex: 1;
+            &:hover {
+                color: var(--accent-color);
+                scale: 1.1;
+            }
+            transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
         }
 
         &.current {
@@ -226,5 +231,10 @@
         height: 24px;
         stroke: var(--body-text-color);
         stroke-width: 1.33;
+        transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        &:hover {
+            box-shadow: var(--shadow-l2);
+            scale: 1.2;
+        }
     }
 }

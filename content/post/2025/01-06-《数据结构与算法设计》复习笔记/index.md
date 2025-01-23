@@ -1,6 +1,6 @@
 ---
 title: "《数据结构与算法设计》复习笔记"
-slug: "01 06 《数据结构与算法设计》复习笔记"
+slug: "2025/01 06 《数据结构与算法设计》复习笔记"
 description:
 date: "2025-01-06T11:13:33+08:00"
 lastmod: "2025-01-06T11:13:33+08:00"
@@ -15,17 +15,17 @@ tags: ["数据结构与算法设计", "计算机科学", "数据结构", "算法
 
 # {{< linking "数据结构" >}} <button onclick="toggleContent('content0')" id="button0"></button>
 <div id="content0" style="display:none;">
-    {{< include "数据结构/index.md" >}}
+{{< include "数据结构/index.md" >}}
 </div>
 
 
 # {{< linking "计算理论" >}} <button onclick="toggleContent('content1')" id="button1"></button>
 <div id="content1" style="display:none;">
-    {{< include "计算理论/index.md" >}}
+{{< include "计算理论/index.md" >}}
 </div>
 
 <style>
-    button {
+    .article-content button {
         background-color: #008CBA; /* Blue */
         border: none;
         color: white;
@@ -42,29 +42,30 @@ tags: ["数据结构与算法设计", "计算机科学", "数据结构", "算法
         align-items: center;
         justify-content: center;
     }
-    button:before {
+    .article-content button:before {
         content: "显示内容";
     }
-    button:after {
+    .article-content button:after {
         content: "隐藏内容";
         display: none;
     }
-    button.active {
+    .article-content button.active {
         background-color: #FF9800; /* Orange when active */
     }
-    button.active:before {
+    .article-content button.active:before {
         display: none;
     }
-    button.active:after {
+    .article-content button.active:after {
         display: inline;
     }
-    button:hover {
+    .article-content button:hover {
         background-color: #005f73; /* Darker blue on hover */
     }
-    button.active:hover {
+    .article-content button.active:hover {
         background-color: #EF6C00; /* Darker orange on hover when active */
     }
 </style>
+
 
 <script>
     function toggleContent(id) {

@@ -1,6 +1,6 @@
 ---
-title: 《概率论与数理统计》复习笔记
-slug: 12 12 《概率论与数理统计》复习笔记
+title: "《概率论与数理统计》复习笔记"
+slug: "2024/12 12 《概率论与数理统计》复习笔记"
 description: 
 date: 2024-12-12T20:35:05+08:00
 lastmod: 2024-12-12T20:35:05+08:00
@@ -17,9 +17,9 @@ tags:
 ## 随机事件和概率
 ### 样本空间与随机事件
 #### 样本空间
-$$S= \left\lbrace  \omega \ | \ \omega为E的可能结果 \right\rbrace $$
-$$A = \left\lbrace t \  | \  t \ge 8000 \right\rbrace $$
-$$S_4 = \left\lbrace 1, 2, 3, 4, 5, 6\right\rbrace $$
+$$S= \left\lbrace  \omega \ | \ \omega为E的可能结果 \right \rbrace $$
+$$A = \left\lbrace t \  | \  t \ge 8000 \right \rbrace $$
+$$S_4 = \left\lbrace 1, 2, 3, 4, 5, 6\right \rbrace $$
 
 ##### 随机事件
 **事件的发生**：在一次试验中，事件A发生的含义是，当且仅当A中一个样本点 发生或出现。事件A发生也称为事件A出现
@@ -67,7 +67,7 @@ $P(A_{j})$和$P(A_{j}\ |\ B)$分别称为原因的先验概率和后验概率
 ## 随机变量及其分布
 ### 离散型随机变量
 #### 单点分布
-若随机变量$X$只取一个常数值$c$，即$P\left\lbrace X=c\right\rbrace =1$，则称$X$服从**单点分布**，也称为**退化分布**。
+若随机变量$X$只取一个常数值$c$，即$P\left\lbrace X=c\right \rbrace =1$，则称$X$服从**单点分布**，也称为**退化分布**。
 
 #### 0-1分布
 若随机变量$X$只可能取$0$和$1$两个值，其分布律为
@@ -83,7 +83,7 @@ $P(A_{j})$和$P(A_{j}\ |\ B)$分别称为原因的先验概率和后验概率
 $X \sim b(n, p)$
 设在一次伯努利试验中有两个可能的结果，$A$与$S−A$，且有$P(A)=p$。
 则在n 重伯努利试验中事件$A$发生的次数$X$是一个离散型随机变量，其分布律为 
-$$P\left\lbrace X = k\right\rbrace  = C_{n}^{k}p^{k}q^{n - k}, \quad k=0, 1, 2 ,\dots, n$$称$X$服从参数为$n$和$p$的二项分布，记为$X \sim b(n, p)$。 
+$$P\left\lbrace X = k\right \rbrace  = C_{n}^{k}p^{k}q^{n - k}, \quad k=0, 1, 2 ,\dots, n$$称$X$服从参数为$n$和$p$的二项分布，记为$X \sim b(n, p)$。 
 
 ##### 期望
 $E(X) = np$
@@ -93,7 +93,7 @@ $D(X) = np(1-p)$
 
 #### 几何分布
 $X \sim G(p)$
-$$k=1,2,3,…P\left\lbrace X = k\right\rbrace  = q^{k-1} p, \quad k = 1, 2, 3, \dots$$
+$$k=1,2,3,…P\left\lbrace X = k\right \rbrace  = q^{k-1} p, \quad k = 1, 2, 3, \dots$$
 
 ##### 期望
 $E(X) = \frac{1}{p}$
@@ -103,13 +103,13 @@ $D(X) = \frac{q}{p^2}$
 
 ##### 无记忆性
 若$X$服从参数为$p$的几何分布，$n$, $m$为任意两 个正整数，则
-$$P\left\lbrace X>n+m\ |\ X>n\right\rbrace =P\left\lbrace X>m\right\rbrace $$
+$$P\left\lbrace X>n+m\ |\ X>n\right \rbrace =P\left\lbrace X>m\right \rbrace $$
 可以理解为：若已经进行了$n$次试验，事件$A$没有发生，则又进行$m$次试验$A$依然没有发生的概率与已知的信息（前$n$次试验$A$没有发生）无关
 这就是说， 并不因为已经进行了$n$次试验$A$没有发生，而会使得在第$n+1,n+2,\dots,n+m$次试验中$A$首次发生的概率提高。
 
 #### 超几何分布
 $X \sim H(n, M, N)$
-$$P\left\lbrace X = m\right\rbrace  = \frac{C_{M}^m-C_{N-M}^{n-m}}{C_{N}^n} \quad m = 0, 1 , \dots , l, \ l = min(M, n)$$
+$$P\left\lbrace X = m\right \rbrace  = \frac{C_{M}^m-C_{N-M}^{n-m}}{C_{N}^n} \quad m = 0, 1 , \dots , l, \ l = min(M, n)$$
 
 ##### 期望
 $E(x) = n \frac{M}{N}$
@@ -119,7 +119,7 @@ $\lim_{ N \to \infty }{ \frac{M}{N} } = p$时，近似于二项分布
 
 #### 泊松分布
 $X \sim P(\lambda)$ 或 $X \sim \pi(\lambda)$
-$$P\left\lbrace X = k\right\rbrace  = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots$$
+$$P\left\lbrace X = k\right \rbrace  = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots$$
 
 ##### 期望
 $E(X) = \lambda$
@@ -180,7 +180,7 @@ $E(X) = \frac{1}{\lambda}$
 $D(X) = \frac{1}{\lambda^2}$
 
 ##### 无记忆性
-$\forall s, t > 0, P\left\lbrace X > s + t \ |\  x > s\right\rbrace  = P\left\lbrace X > t\right\rbrace $
+$\forall s, t > 0, P\left\lbrace X > s + t \ |\  x > s\right \rbrace  = P\left\lbrace X > t\right \rbrace $
 如果$X$表示某仪器的工作寿命，无后效性的解释是：当仪器工作了$s$小时后再能继续工作$t$小时的概率等于该仪器刚开始就能工作$t$小时的概率。
 
 #### 正态分布
@@ -201,7 +201,7 @@ $X \sim N(\mu, \sigma^2)$，则$F(x) = \phi(\frac{x - \mu}{\sigma})$
 
 ### 随机变量的分布
 ####  分布函数与密度函数
-$$F(x)=P\left\lbrace X \le x\right\rbrace $$
+$$F(x)=P\left\lbrace X \le x\right \rbrace $$
 $$f(x) = F'(x)$$
 
 ##### 连续型随机变量函数的分布
@@ -214,7 +214,7 @@ $$F_{Y}(y)=F_{X}(h(y))或1-F_{X}(h(y))$$
 ## 多维随机变量及其分布
 ### 二维随机变量及其联合分布
 #### 分布函数和密度函数
-$$F(x,y)=P\left\lbrace X \leq x, Y \leq y\right\rbrace $$
+$$F(x,y)=P\left\lbrace X \leq x, Y \leq y\right \rbrace $$
 $$F(x,y)=\int_{-\infty}^{x}\int_{-\infty}^{y} f(u,v)  \, du   \, dv $$
 $$\frac{\partial^2F(x, y)}{\partial x\partial y}=f(x,y)$$
 
@@ -257,8 +257,8 @@ $$\rho = \frac{Cov(X, Y)}{\sqrt{D(X)D(Y)}}$$
 #### 边缘分布
 $$F_{X}\left( x \right)  = F \left(x,  +\infty \right) = \lim_{ y \to +\infty}{F \left( x, y \right) }$$
 $$F_{Y}\left( y \right)  = F \left(+\infty , y\right) = \lim_{ x \to +\infty}{F \left( x, y \right) }$$
-$$P\left\lbrace X = x_{i} \right\rbrace = \sum\limits_{i=1}^{\infty}{p_{ij}} \overset{\triangle}{=} p_{i\cdot}$$
-$$P\left\lbrace  Y = y_{i} \right\rbrace  = \sum\limits_{i=1}^{\infty}{p_{ij}} \overset{\triangle}{=} p_{\cdot j}$$
+$$P\left\lbrace X = x_{i} \right \rbrace = \sum\limits_{i=1}^{\infty}{p_{ij}} \overset{\triangle}{=} p_{i\cdot}$$
+$$P\left\lbrace  Y = y_{i} \right \rbrace  = \sum\limits_{i=1}^{\infty}{p_{ij}} \overset{\triangle}{=} p_{\cdot j}$$
 
 ![](imgs/Pasted_image_20241211001327.png)
 
@@ -280,18 +280,18 @@ $$F(x, y) = F_X(x)F_Y(y)$$
 则称随机变量$X$和$Y$相互独立，简称$X$和$Y$独立。
 当利用独立性的定义判断两个随机变量不独立时，只需证明存在一对实数 $x_0, y_0$， 使得 $F(x_0, y_0) \neq F_X(x_0)F_Y(y_0)$。
 若二维随机变量$(X, Y)$相互独立，则有如下结论：
-$$P\left\lbrace a < X \le b, c < Y \le d\right\rbrace  = P\left\lbrace a < X \le b\right\rbrace P\left\lbrace c < Y \le d\right\rbrace $$
-$$P\left\lbrace X > a, Y > b\right\rbrace  = P\left\lbrace X > a\right\rbrace P\left\lbrace Y > b\right\rbrace $$
+$$P\left\lbrace a < X \le b, c < Y \le d\right \rbrace  = P\left\lbrace a < X \le b\right \rbrace P\left\lbrace c < Y \le d\right \rbrace $$
+$$P\left\lbrace X > a, Y > b\right \rbrace  = P\left\lbrace X > a\right \rbrace P\left\lbrace Y > b\right \rbrace $$
 
 #### 离散型随机变量的独立性
-若 $(X, Y)$ 为二维离散型随机变量，且其联合分布律为 $P\left\lbrace X = x_i, Y = y_j\right\rbrace  = p_{ij}$
+若 $(X, Y)$ 为二维离散型随机变量，且其联合分布律为 $P\left\lbrace X = x_i, Y = y_j\right \rbrace  = p_{ij}$
 
 则 $X$ 和 $Y$ 相互独立的充分必要条件是：
-对任意的 $x_i, y_j$，都有 $P\left\lbrace X = x_i, Y = y_j\right\rbrace  = P\left\lbrace X = x_i\right\rbrace P\left\lbrace Y = y_j\right\rbrace$。
+对任意的 $x_i, y_j$，都有 $P\left\lbrace X = x_i, Y = y_j\right \rbrace  = P\left\lbrace X = x_i\right \rbrace P\left\lbrace Y = y_j\right \rbrace$。
 
 由此定理可知，当$X$与$Y$独立时，由边缘分布律可以唯一确定联合分布律。
 同时，只要存在某个数对 $(x_i, y_j)$ 使得：
-$$P\left\lbrace X = x_i, Y = y_j\right\rbrace  \neq P\left\lbrace X = x_i\right\rbrace P\left\lbrace Y = y_j\right\rbrace $$
+$$P\left\lbrace X = x_i, Y = y_j\right \rbrace  \neq P\left\lbrace X = x_i\right \rbrace P\left\lbrace Y = y_j\right \rbrace $$
 则可以判定X与Y不独立。
 
 #### 连续型随机变量的独立性
@@ -323,10 +323,10 @@ $X \sim b(n_1, p)$, $Y \sim b(n_2, p)$, $X$和$Y$相互独立，则$X+Y \sim b(n
 设$(X,Y)$是连续型随机变量，其概率密度函数为$f(x,y)$，$Z=g(X,Y)$是$(X,Y)$的函数，一般可以分为以下两种情况讨论。
 
 第一，$Z=g(X,Y)$为离散型随机变量，此时，只需求$Z$的分布律，问题的实质是将$Z$取某个值$z$的概率转化为$(X,Y)$属于某个区域$D$的概率，即有
-$$P\left\lbrace Z=z\right\rbrace  = P\left\lbrace (X,Y) \in D\right\rbrace  = \int\int_{D} f(x,y) \, dx \, dy$$
+$$P\left\lbrace Z=z\right \rbrace  = P\left\lbrace (X,Y) \in D\right \rbrace  = \int\int_{D} f(x,y) \, dx \, dy$$
 
 第二，当$Z$不是离散型随机变量时，采用分布函数法求$Z=g(X,Y)$的分布函数
-$$F_{Z}(z) = P\left\lbrace Z \leq z\right\rbrace  = P\left\lbrace g(X,Y) \leq z\right\rbrace  = \int\int_{D} f(x,y) \, dx \, dy$$
+$$F_{Z}(z) = P\left\lbrace Z \leq z\right \rbrace  = P\left\lbrace g(X,Y) \leq z\right \rbrace  = \int\int_{D} f(x,y) \, dx \, dy$$
 
 当$Z$为连续型随机变量时，其概率密度函数为
 $$f_{Z}(z) = \frac{d}{dz} F_{Z}(z)$$
@@ -338,21 +338,21 @@ $$f_{Z}(z) = \frac{d}{dz} F_{Z}(z)$$
 ##### 最大值和最小值的分布函数
 随机变量 $X$ 和 $Y$ 相互独立，其分布函数分别为 $F_X(x)$ 和 $F_Y(y)$ ，现在来求 $M=\max(X,Y)$ 以及 $N=\min(X,Y)$ 的分布函数。
 设 $M$ 的分布函数为 $F_M(z)$ 。
-$$F_M(z)=P\left\lbrace M \le z\right\rbrace  = P\left\lbrace X \le z, Y \le z\right\rbrace $$
+$$F_M(z)=P\left\lbrace M \le z\right \rbrace  = P\left\lbrace X \le z, Y \le z\right \rbrace $$
 由于 $X$ 和 $Y$ 相互独立，于是 $M=\max(X, Y)$ 的分布函数为：
-$$F_M(z)=P\left\lbrace X \le z\right\rbrace P\left\lbrace Y \le z\right\rbrace  = F_X(z)F_Y(z)$$
+$$F_M(z)=P\left\lbrace X \le z\right \rbrace P\left\lbrace Y \le z\right \rbrace  = F_X(z)F_Y(z)$$
 即有：
 $$F_M(z)= F_X(z)F_Y(z)$$
-$$F_N(z)=1−[1−F_X(z)][1−F_Y(z)] = 1−P\left\lbrace X > z, Y > z\right\rbrace $$
-$$F_N(z)=P\left\lbrace N \le z\right\rbrace  = 1−P\left\lbrace N > z\right\rbrace $$
+$$F_N(z)=1−[1−F_X(z)][1−F_Y(z)] = 1−P\left\lbrace X > z, Y > z\right \rbrace $$
+$$F_N(z)=P\left\lbrace N \le z\right \rbrace  = 1−P\left\lbrace N > z\right \rbrace $$
 类似的，可求得 $N=\min(X, Y)$ 的分布函数
 由于 $X$ 和 $Y$ 相互独立，于是 $N=\min(X,Y)$ 的分布函数为：
-$$F_N(z)=1−P\left\lbrace X > z\right\rbrace P\left\lbrace Y > z\right\rbrace $$
+$$F_N(z)=1−P\left\lbrace X > z\right \rbrace P\left\lbrace Y > z\right \rbrace $$
 
 ## 随机变量的数字特征
 ### 数学期望
 #### 定义
-设$X$是离散型随机变量，其分布律为：$P\left\lbrace X=x_k\right\rbrace =p_k , k=1, 2 ,\dots$
+设$X$是离散型随机变量，其分布律为：$P\left\lbrace X=x_k\right \rbrace =p_k , k=1, 2 ,\dots$
 如果级数**绝对收敛**，则称它为$X$的数学期望，简称期望，
 又称均值，记为$E(X)$。
 $$E(X) = \sum_{k=1}^{\infty} x_k p_k$$
@@ -362,7 +362,7 @@ $$E(X) = \sum_{k=1}^{\infty} x_k p_k$$
 
 #### 随机变量函数的数学期望
 设X是一个随机变量，Y=g(X)是X的函数。若绝对收敛，则Y的数学期望存在，且
-1. 设X为离散型随机变量, 且其分布律为$P \left\lbrace  {X=x_i} \right\rbrace  =p_i，i=1, 2, \dots$
+1. 设X为离散型随机变量, 且其分布律为$P \left\lbrace  {X=x_i} \right \rbrace  =p_i，i=1, 2, \dots$
   $$E(Y) = E(g(X)) = \sum_{k=1}^{\infty} g(x_k) p_k$$
   则Y的数学期望存在，且
 
@@ -454,14 +454,14 @@ $$X与Y相关 \Rightarrow X与Y不独立$$
 ### 切比雪夫不等式
 #### 定理
 设随机变量$X$的数学期望$E(X)=\mu$，方差$D(X)=\sigma^2$，则对任意正数$\varepsilon$，有
-$$P\left\lbrace |X-\mu| \geq \varepsilon\right\rbrace  \leq \frac{\sigma^2}{\varepsilon^2}$$
+$$P\left\lbrace |X-\mu| \geq \varepsilon\right \rbrace  \leq \frac{\sigma^2}{\varepsilon^2}$$
 或等价地写成
-$$P\left\lbrace |X-\mu| < \varepsilon\right\rbrace  \geq 1 - \frac{\sigma^2}{\varepsilon^2}$$
+$$P\left\lbrace |X-\mu| < \varepsilon\right \rbrace  \geq 1 - \frac{\sigma^2}{\varepsilon^2}$$
 
 #### 证明
 $$
 \begin{aligned}
-P\left\lbrace |X-\mu| \geq \varepsilon\right\rbrace  &= P\left\lbrace (X-\mu)^2 \geq \varepsilon^2\right\rbrace  \newline
+P\left\lbrace |X-\mu| \geq \varepsilon\right \rbrace  &= P\left\lbrace (X-\mu)^2 \geq \varepsilon^2\right \rbrace  \newline
 &= \int_{|X-\mu| \geq \varepsilon}{f(x) \, dx} \newline
 &\leq \int_{|X-\mu| \geq \varepsilon}{\frac{(X-\mu)^2}{\varepsilon^2} \, dx} \newline
 &= \frac{\sigma^2}{\varepsilon^2}
@@ -474,25 +474,25 @@ $$
 ### 依概率收敛
 #### 定义
 设$X_1, X_2, \dots, X_n, \dots$是一列随机变量，$X$是另一随机变量，若对任意正数$\varepsilon$，有
-$$\lim_{n \to \infty}{P\left\lbrace |X_n - X| \geq \varepsilon\right\rbrace } = 0$$
+$$\lim_{n \to \infty}{P\left\lbrace |X_n - X| \geq \varepsilon\right \rbrace } = 0$$
 则称随机变量序列$X_1, X_2, \dots, X_n, \dots$依概率收敛于$X$，记为$X_n \xrightarrow{P} X$
 
 ### 大数定律
 #### 切比雪夫大数定律
 ##### 定理
-设随机变量序列$\left\lbrace X_i, i \geq 1\right\rbrace $相互独立，它们的数学期望和方差都存在，且方差有共同的上界，即存在常数$M>0$，使得$D(X_i) \leq M$，$i=1,2,\dots$，则对任意给定的常数$\varepsilon >0$，有
-$$\lim_{n \to \infty} P\left\lbrace \left|\frac{1}{n}\sum_{i=1}^{n} X_i - \frac{1}{n}\sum_{i=1}^{n}E(X_i)\right| < \varepsilon\right\rbrace  = 1$$
+设随机变量序列$\left\lbrace X_i, i \geq 1\right \rbrace $相互独立，它们的数学期望和方差都存在，且方差有共同的上界，即存在常数$M>0$，使得$D(X_i) \leq M$，$i=1,2,\dots$，则对任意给定的常数$\varepsilon >0$，有
+$$\lim_{n \to \infty} P\left\lbrace \left|\frac{1}{n}\sum_{i=1}^{n} X_i - \frac{1}{n}\sum_{i=1}^{n}E(X_i)\right| < \varepsilon\right \rbrace  = 1$$
 
 ###### 特殊情况
 设$X_1, X_2, \dots, X_n, \dots$是一列独立的随机变量，它们具有相同的数学期望和方差，$E(X_i)=\mu$，$D(X_i)=\sigma^2$，则对任意正数$\varepsilon$，有
-$$\lim_{n \to \infty}{P\left\lbrace \left|\frac{X_1+X_2+\dots+X_n}{n}-\mu\right| < \varepsilon\right\rbrace } = 1$$
+$$\lim_{n \to \infty}{P\left\lbrace \left|\frac{X_1+X_2+\dots+X_n}{n}-\mu\right| < \varepsilon\right \rbrace } = 1$$
 即
 $$\frac{X_1+X_2+\dots+X_n}{n} \xrightarrow{P} \mu$$
 
 #### 伯努利大数定律
 ##### 定理
 设$S_n$是$n$重伯努利试验中事件$A$发生的次数，$p$是一次试验中事件$A$发生的概率$(0 < p < 1)$，则对任给的常数$\varepsilon > 0$，有
-$$\lim_{n \to \infty} P\left\lbrace \left|\frac{S_n}{n} - p\right| < \varepsilon\right\rbrace  = 1$$
+$$\lim_{n \to \infty} P\left\lbrace \left|\frac{S_n}{n} - p\right| < \varepsilon\right \rbrace  = 1$$
 即
 $$\frac{S_n}{n} \xrightarrow{P} p$$
 
@@ -502,7 +502,7 @@ $$\frac{S_n}{n} \xrightarrow{P} p$$
 #### 辛钦大数定律
 ##### 定理
 设$X_1, X_2, \dots, X_n, \dots$是一列相互独立的随机变量，且它们具有相同的数学期望$E(X_i)=\mu$，若对任意正数$\varepsilon$，有
-$$\lim_{n \to \infty} P\left\lbrace \left|\frac{X_1+X_2+\dots+X_n}{n}-\mu\right| < \varepsilon\right\rbrace  = 1$$
+$$\lim_{n \to \infty} P\left\lbrace \left|\frac{X_1+X_2+\dots+X_n}{n}-\mu\right| < \varepsilon\right \rbrace  = 1$$
 则称随机变量序列$X_1, X_2, \dots, X_n, \dots$依概率收敛于$\mu$，记为$X_n \xrightarrow{P} \mu$
 
 ##### 意义
@@ -511,7 +511,7 @@ $$\lim_{n \to \infty} P\left\lbrace \left|\frac{X_1+X_2+\dots+X_n}{n}-\mu\right|
 ### 中心极限定理
 #### 定理
 设$X_1, X_2, \dots, X_n, \dots$是一列独立同分布的随机变量，$E(X_i)=\mu$，$D(X_i)=\sigma^2$，则对任意正数$\varepsilon$，有
-$$\lim_{n \to \infty} P\left\lbrace \frac{X_1+X_2+\dots+X_n-n\mu}{\sigma\sqrt{n}} < \varepsilon\right\rbrace  = \Phi(\varepsilon)$$
+$$\lim_{n \to \infty} P\left\lbrace \frac{X_1+X_2+\dots+X_n-n\mu}{\sigma\sqrt{n}} < \varepsilon\right \rbrace  = \Phi(\varepsilon)$$
 其中$\Phi(\varepsilon)$是标准正态分布的分布函数。
 即
 $$\frac{X_1+X_2+\dots+X_n-n\mu}{\sigma\sqrt{n}} \xrightarrow{P} N(0,1)$$
@@ -521,8 +521,8 @@ $$\frac{X_1+X_2+\dots+X_n-n\mu}{\sigma\sqrt{n}} \xrightarrow{P} N(0,1)$$
 这就是正态分布在概率论中占有重要地位的一个基本原因，也有助于解释为什么很多自然群体的经验频率呈现钟形曲线这一值得注意的事实。
 
 #### De Moivre-Laplace 中心极限定理
-设$X_1, X_2, \dots, X_n, \dots$是一列独立同分布的伯努利随机变量，$P\left\lbrace X_i=1\right\rbrace =p$，$P\left\lbrace X_i=0\right\rbrace =1-p$，则对任意正数$\varepsilon$，有
-$$\lim_{n \to \infty} P\left\lbrace \frac{S_n-np}{\sqrt{np(1-p)}} < \varepsilon\right\rbrace  = \Phi(\varepsilon)$$
+设$X_1, X_2, \dots, X_n, \dots$是一列独立同分布的伯努利随机变量，$P\left\lbrace X_i=1\right \rbrace =p$，$P\left\lbrace X_i=0\right \rbrace =1-p$，则对任意正数$\varepsilon$，有
+$$\lim_{n \to \infty} P\left\lbrace \frac{S_n-np}{\sqrt{np(1-p)}} < \varepsilon\right \rbrace  = \Phi(\varepsilon)$$
 其中$S_n$是$n$重伯努利试验中事件$A$发生的次数。
 即
 $$\frac{S_n-np}{\sqrt{np(1-p)}} \xrightarrow{P} N(0,1)$$
@@ -531,9 +531,9 @@ $$\frac{S_n-np}{\sqrt{np(1-p)}} \xrightarrow{P} N(0,1)$$
 
 #### Lyapunov中心极限定理
 设$X_1, X_2, \dots, X_n, \dots$是一列独立的随机变量，他们的数学期望和方差都存在，且其数学期望$E(X_i)=\mu_i$，方差$D(X_i)=\sigma_i^2$，记$B_n^2 = \sum_{i=1}^{n} \sigma_i^2$，若存在正数$\delta > 0$，使得Lyapunov条件：
-$$\lim_{n \to \infty} \frac{1}{B_n^{2+\delta}} \sum_{i=1}^{n} E\left\lbrace |X_i-\mu_i|^{2+\delta}\right\rbrace  = 0$$
+$$\lim_{n \to \infty} \frac{1}{B_n^{2+\delta}} \sum_{i=1}^{n} E\left\lbrace |X_i-\mu_i|^{2+\delta}\right \rbrace  = 0$$
 则对任意正数$\varepsilon$，有
-$$\lim_{n \to \infty} P\left\lbrace \frac{\sum\limits_{i=1}^{n} X_i - \sum\limits_{i=1}^{n} \mu_i}{B_n} < \varepsilon\right\rbrace  = \Phi(\varepsilon)$$
+$$\lim_{n \to \infty} P\left\lbrace \frac{\sum\limits_{i=1}^{n} X_i - \sum\limits_{i=1}^{n} \mu_i}{B_n} < \varepsilon\right \rbrace  = \Phi(\varepsilon)$$
 即
 $$\frac{\sum\limits_{i=1}^{n} X_i - \sum\limits_{i=1}^{n} \mu_i}{B_n} \xrightarrow{P} N(0,1)$$
 
@@ -582,7 +582,7 @@ $$数理统计\left\lbrace \begin{array}{c} 抽样分布 \newline \newline 参�
 ##### 定义
 设 $X_1, X_2, \dots, X_n$ 是从总体 $X$ 中抽取的容量为 $n$ 的简单随机样本，若 $X_1, X_2, \dots, X_n$ 的联合分布函数为 $F_n(x_1, x_2, \dots, x_n)$，则称 $F_n(x_1, x_2, \dots, x_n)$ 为样本 $X_1, X_2, \dots, X_n$ 的**联合分布函数**，简称**样本分布**。
 即
-$$F_n(x_1, x_2, \dots, x_n) = P\left\lbrace X_1 \leq x_1, X_2 \leq x_2, \dots, X_n \leq x_n\right\rbrace $$
+$$F_n(x_1, x_2, \dots, x_n) = P\left\lbrace X_1 \leq x_1, X_2 \leq x_2, \dots, X_n \leq x_n\right \rbrace $$
 $$f_n(x_1, x_2, \dots, x_n) = \frac{\partial^n F_n(x_1, x_2, \dots, x_n)}{\partial x_1 \partial x_2 \dots \partial x_n}$$
 称为样本 $X_1, X_2, \dots, X_n$ 的**联合密度函数**，简称**样本密度**。
 
@@ -725,50 +725,50 @@ $$\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2} \sim F(n-1, m-1)$$
 ### 分位数
 #### 定义
 设 $X$ 是连续型随机变量，$F(x)$ 是 $X$ 的分布函数，$0 < \alpha < 1$，若满足
-$$P\left\lbrace X \geq x_\alpha\right\rbrace  = 1 - F(x_\alpha) = \int_{x_\alpha}^{+\infty} f(x) \, dx = \alpha$$
+$$P\left\lbrace X \geq x_\alpha\right \rbrace  = 1 - F(x_\alpha) = \int_{x_\alpha}^{+\infty} f(x) \, dx = \alpha$$
 则称 $x_\alpha$ 为 $X$ 的上 $\alpha$ 分位数。
 
 #### 标准正态分布
 标准正态分布的上 $\alpha$ 分位数记为 $z_\alpha$，即
-$$P\left\lbrace Z \geq z_\alpha\right\rbrace  = 1 - F(z_\alpha) = \alpha$$
+$$P\left\lbrace Z \geq z_\alpha\right \rbrace  = 1 - F(z_\alpha) = \alpha$$
 
 ##### 性质
 1. $\Phi(z_\alpha) = 1 - \alpha$
 2. $z_{1 - \alpha} = -z_\alpha$
 后面常用到下面两个式子：
-$$P\left\lbrace |Z| > z_{\alpha/2}\right\rbrace  = \alpha, \quad P\left\lbrace |Z| \leq z_{\alpha/2}\right\rbrace  = 1 - \alpha$$
+$$P\left\lbrace |Z| > z_{\alpha/2}\right \rbrace  = \alpha, \quad P\left\lbrace |Z| \leq z_{\alpha/2}\right \rbrace  = 1 - \alpha$$
 常用数字：
 $$z_{0.025} = z_{0.975} = 1.96, \quad z_{0.05} = z_{0.95} = 1.645$$
 
 #### chi-square分布
 设 $X \sim \chi^2(n)$，则 $\chi^2(n)$ 的上 $\alpha$ 分位数记为 $\chi^2_{\alpha}(n)$，即
-$$P\left\lbrace X \geq \chi^2_{\alpha}(n)\right\rbrace  = 1 - F(\chi^2_{\alpha}(n)) = \alpha$$
+$$P\left\lbrace X \geq \chi^2_{\alpha}(n)\right \rbrace  = 1 - F(\chi^2_{\alpha}(n)) = \alpha$$
 
 ##### 性质
 当 $n$ 充分大时（$n>45$），有
 $$\chi^2_{\alpha}(n) \approx \frac{1}{2}\left(z_\alpha+\sqrt{2n-1}\right)^2$$
 后面常用到下面两个式子：
-$$P\left\lbrace \chi^2 > \chi^2_{\alpha / 2}(n)\right\rbrace  + P\left\lbrace \chi^2 < \chi^2_{1-\alpha / 2}(n)\right\rbrace  = \alpha$$ 
-$$P\left\lbrace \chi^2_{\alpha / 2}(n) < \chi^2 < \chi^2_{1-\alpha / 2}(n)\right\rbrace  = 1 - \alpha$$
+$$P\left\lbrace \chi^2 > \chi^2_{\alpha / 2}(n)\right \rbrace  + P\left\lbrace \chi^2 < \chi^2_{1-\alpha / 2}(n)\right \rbrace  = \alpha$$ 
+$$P\left\lbrace \chi^2_{\alpha / 2}(n) < \chi^2 < \chi^2_{1-\alpha / 2}(n)\right \rbrace  = 1 - \alpha$$
 
 #### student's t分布
 设 $T \sim t(n)$，则 $t(n)$ 的上 $\alpha$ 分位数记为 $t_{\alpha}(n)$，即
-$$P\left\lbrace T \geq t_{\alpha}(n)\right\rbrace  = 1 - F(t_{\alpha}(n)) = \alpha$$
+$$P\left\lbrace T \geq t_{\alpha}(n)\right \rbrace  = 1 - F(t_{\alpha}(n)) = \alpha$$
 
 ##### 性质
 当 $n$ 充分大时（$n>45$），有
 $$t_{\alpha}(n) \approx z_{\alpha}$$
 后面常用到下面两个式子：
-$$P\left\lbrace |T| > t_{\alpha/2}(n)\right\rbrace  = \alpha, \quad P\left\lbrace |T| \leq t_{\alpha/2}(n)\right\rbrace  = 1 - \alpha$$
+$$P\left\lbrace |T| > t_{\alpha/2}(n)\right \rbrace  = \alpha, \quad P\left\lbrace |T| \leq t_{\alpha/2}(n)\right \rbrace  = 1 - \alpha$$
 
 #### Fisher分布
 设 $F \sim F(n, m)$，则 $F(n, m)$ 的上 $\alpha$ 分位数记为 $F_{\alpha}(n, m)$，即
-$$P\left\lbrace F \geq F_{\alpha}(n, m)\right\rbrace  = 1 - F(F_{\alpha}(n, m)) = \alpha$$
+$$P\left\lbrace F \geq F_{\alpha}(n, m)\right \rbrace  = 1 - F(F_{\alpha}(n, m)) = \alpha$$
 
 ##### 性质
 后面常用到下面两个式子：
-$$P\left\lbrace F > F_{\alpha/2}(n, m)\right\rbrace  + P\left\lbrace F < F_{1-\alpha/2}(n, m)\right\rbrace  = \alpha$$
-$$P\left\lbrace F_{\alpha/2}(n, m) \leq F \leq F_{1-\alpha/2}(n, m)\right\rbrace  = 1 - \alpha$$
+$$P\left\lbrace F > F_{\alpha/2}(n, m)\right \rbrace  + P\left\lbrace F < F_{1-\alpha/2}(n, m)\right \rbrace  = \alpha$$
+$$P\left\lbrace F_{\alpha/2}(n, m) \leq F \leq F_{1-\alpha/2}(n, m)\right \rbrace  = 1 - \alpha$$
 对称性：
 $$F_{\alpha}(n, m) = \frac{1}{F_{1-\alpha}(m, n)}$$
 
@@ -905,22 +905,22 @@ $$\hat{\theta}\_L = \hat{\theta}\_L(X\_1, X\_2, \dots, X\_n)$$
 与   
 $$\hat{\theta}\_U = \hat{\theta}\_U(X\_1, X\_2, \dots, X\_n)$$  
 使得对于任意的 $\theta \in \Theta$，满足  
-$$P\_\theta\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right\rbrace \geq 1 - \alpha$$  
+$$P\_\theta\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right \rbrace \geq 1 - \alpha$$  
 则称 $[\hat{\theta}\_L, \hat{\theta}\_U]$ 为 $\theta$ 的置信水平为 $1 - \alpha$ 的**置信区间**。  
 $\alpha$ 称为**显著性水平**，$1 - \alpha$ 称为**置信水平**。  
 $\hat{\theta}\_L$ 与 $\hat{\theta}\_U$ 分别称为置信水平为 $1 - \alpha$ 的 $\theta$ 的**置信下限**与**置信上限**。  
   
 1. 当 $X$ 连续时，对于给定的 $\alpha$，可以求出置信区间 $[\hat{\theta}\_L, \hat{\theta}\_U]$ 满足：  
-$$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right \rbrace = 1 - \alpha$$  
 2. 当 $X$ 离散时，对于给定的 $\alpha$，常常找不到一个置信区间 $[\hat{\theta}\_L, \hat{\theta}\_U]$ 满足：  
-$$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right \rbrace = 1 - \alpha$$  
 此时，通常找到一个置信区间 $[\hat{\theta}\_L, \hat{\theta}\_U]$ 满足：    
-$$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right\rbrace \geq 1 - \alpha$$    
+$$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right \rbrace \geq 1 - \alpha$$    
 且尽可能接近 $1 - \alpha$。  
 3. 对于样本 $(X_1, X_2, \dots, X_n)$，若 $\theta$ 的置信水平为 $1 - \alpha$ 的置信区间为 $[\hat{\theta}_L, \hat{\theta}_U]$，以 $1 - \alpha$ 的概率包含未知参数 $\theta$。    
 即：$[\hat{\theta}_L, \hat{\theta}_U]$ 是一个**随机区间**，当重复抽样时，有 $1 - \alpha$ 的概率包含未知参数 $\theta$。    
 4. 对于样本观测值 $(x_1, x_2, \dots, x_n)$，若 $\theta$ 的置信水平为 $1 - \alpha$ 的置信区间为 $[\hat{\theta}_L, \hat{\theta}_U]$，则 $[\hat{\theta}_L, \hat{\theta}_U]$ 是一个**常数区间**，只有**两种可能**：包含未知参数 $\theta$ 或不包含未知参数 $\theta$。  
-此时，**不能说** $P\left\lbrace \theta \in [\hat{\theta}_L(x_1, x_2, \dots, x_n), \hat{\theta}_U(x_1, x_2, \dots, x_n)] \right\rbrace = 1 - \alpha$。
+此时，**不能说** $P\left\lbrace \theta \in [\hat{\theta}_L(x_1, x_2, \dots, x_n), \hat{\theta}_U(x_1, x_2, \dots, x_n)] \right \rbrace = 1 - \alpha$。
 可以理解为：该常数区间包含未知参数真值的可信程度为 $1 - \alpha$。
 
 常数区间 $[\hat{\theta}_L(x_1, x_2, \dots, x_n), \hat{\theta}_U(x_1, x_2, \dots, x_n)]$ 认为是随机区间的 $[\hat{\theta}_L(X_1, X_2, \dots, X_n), \hat{\theta}_U(X_1, X_2, \dots, X_n)]$ 的一次实现。
@@ -931,7 +931,7 @@ $$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right\rbrace \
 
 理论上的原则是：***保证可靠度的前提下，求精度尽可能高的置信区间。***
 
-一般做法是，根据不同类型的问题，先确定一个较大的置信水平 $1 - \alpha$，使得 $P\left\lbrace \hat{\theta}_L \leq \theta \leq \hat{\theta}_U \right\rbrace = 1 - \alpha$
+一般做法是，根据不同类型的问题，先确定一个较大的置信水平 $1 - \alpha$，使得 $P\left\lbrace \hat{\theta}_L \leq \theta \leq \hat{\theta}_U \right \rbrace = 1 - \alpha$
 此时 $[\hat{\theta}_L, \hat{\theta}_U]$ 的区间有任意多种，之后在从中选取一个平均长度最短的区间作为最终的置信区间。
 
 #### 枢轴量法
@@ -939,9 +939,9 @@ $$P\left\lbrace \hat{\theta}\_L \leq \theta \leq \hat{\theta}\_U \right\rbrace \
 1. 找一个与待估参数 $\theta$ 有关的统计量 $T(X_1, X_2, \dots, X_n)$，一般选取一个 $\theta$ 的一个优良的点估计；
 2. 构造统计量 $T(X_1, X_2, \dots, X_n)$ 和参数 $\theta$ 的一个函数 $G(T, \theta)$，要求 $G$ 的分布不依赖于 $\theta$，具有这种性质的函数 $G$ 称为**枢轴量**；
 3. 对于给定的置信水平 $1 - \alpha$，选取两个常数 $a$ 和 $b$（$a < b$），使得
-$$P\left\lbrace a \leq G(T, \theta) \leq b \right\rbrace = 1 - \alpha$$
+$$P\left\lbrace a \leq G(T, \theta) \leq b \right \rbrace = 1 - \alpha$$
 4. 如果不等式 $a \leq G(T, \theta) \leq b$ 等价变形为 $\hat{\theta}_L \leq \theta \leq \hat{\theta}_U$，则有
-$$P\left\lbrace \hat{\theta}_L \leq \theta \leq \hat{\theta}_U \right\rbrace = 1 - \alpha$$
+$$P\left\lbrace \hat{\theta}_L \leq \theta \leq \hat{\theta}_U \right \rbrace = 1 - \alpha$$
 则 $[\hat{\theta}_L, \hat{\theta}_U]$ 是 $\theta$ 的置信水平为 $1 - \alpha$ 的置信区间。
 
 ##### 注意
@@ -951,7 +951,7 @@ $$P\left\lbrace \hat{\theta}_L \leq \theta \leq \hat{\theta}_U \right\rbrace = 1
   1. 对于任意两个数 $a$ 和 $b$，只要使得 $f(w)$ 下方的面积为 $1 - \alpha$ 即可。
   2. 当 $W$ 的密度函数 $f(w)$ 单峰且对称时，当$a = -b$时，求得的置信区间长度最短。
   3. 当 $W$ 的密度函数 $f(w)$ 不对称时，仍习惯取对称的分位点来计算未知函数的置信区间。即有
-  $$P_{\theta}\left\lbrace G(T, \theta) \geq b \right\rbrace = \alpha/2, \quad P_{\theta}\left\lbrace G(T, \theta) \leq a \right\rbrace = \alpha/2$$
+  $$P_{\theta}\left\lbrace G(T, \theta) \geq b \right \rbrace = \alpha/2, \quad P_{\theta}\left\lbrace G(T, \theta) \leq a \right \rbrace = \alpha/2$$
   此时的置信区间长度不必是最短的。
 
 ##### 单侧置信区间
@@ -959,11 +959,11 @@ $$P\left\lbrace \hat{\theta}_L \leq \theta \leq \hat{\theta}_U \right\rbrace = 1
 
 1. **单侧置信下限**：当对参数 $\theta$ 的估计只关心其是否大于某个值时，可以构造单侧置信下限。
 若对于给定的置信水平 $1 - \alpha$，存在一个统计量 $\hat{\theta}_L = \hat{\theta}_L(X_1, X_2, \dots, X_n)$，使得
-$$P\left\lbrace \hat{\theta}_L \leq \theta \right\rbrace \geq 1 - \alpha$$
+$$P\left\lbrace \hat{\theta}_L \leq \theta \right \rbrace \geq 1 - \alpha$$
 则称 $\hat{\theta}_L$ 是 $\theta$ 的置信水平为 $1 - \alpha$ 的**单侧置信下限**。
 2. **单侧置信上限**：当对参数 $\theta$ 的估计只关心其是否小于某个值时，可以构造单侧置信上限。
 若对于给定的置信水平 $1 - \alpha$，存在一个统计量 $\hat{\theta}_U = \hat{\theta}_U(X_1, X_2, \dots, X_n)$，使得
-$$P\left\lbrace \hat{\theta}_U \geq \theta \right\rbrace \geq 1 - \alpha$$
+$$P\left\lbrace \hat{\theta}_U \geq \theta \right \rbrace \geq 1 - \alpha$$
 则称 $\hat{\theta}_U$ 是 $\theta$ 的置信水平为 $1 - \alpha$ 的**单侧置信上限**。
 
 #### 单个正态总体均值的区间估计
@@ -975,9 +975,9 @@ $X_1, X_2, \dots, X_n$ 是来自正态总体 $N(\mu, \sigma^2)$ 的样本，$\si
 $$W = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$$
 $W$ 是一个枢轴量，其分布为$N(0, 1)$
 即
-$$P\left\lbrace -z_{\alpha/2} \leq \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \leq z_{\alpha/2} \right\rbrace = 1 - \alpha$$
+$$P\left\lbrace -z_{\alpha/2} \leq \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \leq z_{\alpha/2} \right \rbrace = 1 - \alpha$$
 有
-$$P\left\lbrace \overline{X} - \frac{\sigma}{\sqrt{n}}z_{\alpha/2} \leq \mu \leq \overline{X} + \frac{\sigma}{\sqrt{n}}z_{\alpha/2} \right\rbrace = 1 - \alpha$$
+$$P\left\lbrace \overline{X} - \frac{\sigma}{\sqrt{n}}z_{\alpha/2} \leq \mu \leq \overline{X} + \frac{\sigma}{\sqrt{n}}z_{\alpha/2} \right \rbrace = 1 - \alpha$$
 因此，$\mu$ 的置信水平为 $1 - \alpha$ 的置信区间为
 $$\left[ \overline{X} - \frac{\sigma}{\sqrt{n}}z_{\alpha/2}, \overline{X} + \frac{\sigma}{\sqrt{n}}z_{\alpha/2} \right]$$
 简记为 $\mu \in \left[ \overline{X} - \frac{\sigma}{\sqrt{n}}z_{\alpha/2}, \overline{X} + \frac{\sigma}{\sqrt{n}}z_{\alpha/2} \right]$
@@ -993,9 +993,9 @@ $$\left[ \overline{X} - \frac{\sigma}{\sqrt{n}}z_{\alpha/2}, \overline{X} + \fra
 $$T = \frac{\overline{X} - \mu}{S/\sqrt{n}} \sim t(n-1)$$  
 $T$ 是一个枢轴量，其分布为 $t(n-1)$  
 即  
-$$P\left\lbrace -t_{\alpha/2}(n-1) \leq \frac{\overline{X} - \mu}{S/\sqrt{n}} \leq t_{\alpha/2}(n-1) \right\rbrace = 1 - \alpha$$  
-使$P\left\lbrace -t_{\alpha/2}(n-1) \leq \frac{\overline{X} - \mu}{S/\sqrt{n}} \leq t_{\alpha/2}(n-1) \right\rbrace = 1 - \alpha$，有  
-$$P\left\lbrace t_{\alpha/2}(n-1) \leq \frac{\overline{X} - \mu}{S/\sqrt{n}} \leq t_{\alpha/2}(n-1) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace -t_{\alpha/2}(n-1) \leq \frac{\overline{X} - \mu}{S/\sqrt{n}} \leq t_{\alpha/2}(n-1) \right \rbrace = 1 - \alpha$$  
+使$P\left\lbrace -t_{\alpha/2}(n-1) \leq \frac{\overline{X} - \mu}{S/\sqrt{n}} \leq t_{\alpha/2}(n-1) \right \rbrace = 1 - \alpha$，有  
+$$P\left\lbrace t_{\alpha/2}(n-1) \leq \frac{\overline{X} - \mu}{S/\sqrt{n}} \leq t_{\alpha/2}(n-1) \right \rbrace = 1 - \alpha$$  
 因此，$\mu$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \overline{X} - \frac{S}{\sqrt{n}}t_{\alpha/2}(n-1), \overline{X} + \frac{S}{\sqrt{n}}t_{\alpha/2}(n-1) \right]$$  
   
@@ -1005,9 +1005,9 @@ $X_1, X_2, \dots, X_n$ 是来自正态总体 $N(\mu, \sigma^2)$ 的样本，$\mu
 $\sigma^2$ 的点估计为 $S^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2$，则  
 $$\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)$$  
 有  
-$$P\left\lbrace \chi^2_{\alpha/2}(n-1) \leq \frac{(n-1)S^2}{\sigma^2} \leq \chi^2_{1-\alpha/2}(n-1) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \chi^2_{\alpha/2}(n-1) \leq \frac{(n-1)S^2}{\sigma^2} \leq \chi^2_{1-\alpha/2}(n-1) \right \rbrace = 1 - \alpha$$  
 即  
-$$P\left\lbrace \frac{(n-1)S^2}{\chi^2_{1-\alpha/2}(n-1)} \leq \sigma^2 \leq \frac{(n-1)S^2}{\chi^2_{\alpha/2}(n-1)} \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \frac{(n-1)S^2}{\chi^2_{1-\alpha/2}(n-1)} \leq \sigma^2 \leq \frac{(n-1)S^2}{\chi^2_{\alpha/2}(n-1)} \right \rbrace = 1 - \alpha$$  
 因此，$\sigma^2$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \frac{(n-1)S^2}{\chi^2_{1-\alpha/2}(n-1)}, \frac{(n-1)S^2}{\chi^2_{\alpha/2}(n-1)} \right]$$  
 $\sigma$ 的置信水平为 $1 - \alpha$ 的置信区间为  
@@ -1017,9 +1017,9 @@ $$\left[ \sqrt{\frac{(n-1)S^2}{\chi^2_{1-\alpha/2}(n-1)}}, \sqrt{\frac{(n-1)S^2}
 仍然满足枢轴量的条件，但 $\mu$ 没有用到，造成了信息的损失。  
 $$\frac{1}{\sigma^2} \sum_{i=1}^{n} (X_i - \mu)^2 \sim \chi^2(n)$$  
 有  
-$$P\left\lbrace \chi^2_{\alpha/2}(n) \leq \frac{1}{\sigma^2} \sum_{i=1}^{n} (X_i - \mu)^2 \leq \chi^2_{1-\alpha/2}(n) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \chi^2_{\alpha/2}(n) \leq \frac{1}{\sigma^2} \sum_{i=1}^{n} (X_i - \mu)^2 \leq \chi^2_{1-\alpha/2}(n) \right \rbrace = 1 - \alpha$$  
 即  
-$$P\left\lbrace \frac{1}{\chi^2_{1-\alpha/2}(n)} \sum_{i=1}^{n} (X_i - \mu)^2 \leq \sigma^2 \leq \frac{1}{\chi^2_{\alpha/2}(n)} \sum_{i=1}^{n} (X_i - \mu)^2 \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \frac{1}{\chi^2_{1-\alpha/2}(n)} \sum_{i=1}^{n} (X_i - \mu)^2 \leq \sigma^2 \leq \frac{1}{\chi^2_{\alpha/2}(n)} \sum_{i=1}^{n} (X_i - \mu)^2 \right \rbrace = 1 - \alpha$$  
 故 $\sigma^2$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \frac{1}{\chi^2_{1-\alpha/2}(n)} \sum_{i=1}^{n} (X_i - \mu)^2, \frac{1}{\chi^2_{\alpha/2}(n)} \sum_{i=1}^{n} (X_i - \mu)^2 \right]$$  
   
@@ -1030,7 +1030,7 @@ $X_1, X_2, \dots, X_m$ 是来自正态总体 $N(\mu_1, \sigma_1^2)$ 的样本，
 $\overline{X} = \frac{1}{m} \sum_{i=1}^{m} X_i$，$\overline{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i$，则  
 $$\overline{X} - \overline{Y} \sim N(\mu_1 - \mu_2, \frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n})$$  
 有  
-$$P\left\lbrace -z_{\alpha/2} \leq \frac{\overline{X} - \overline{Y} - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \leq z_{\alpha/2} \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace -z_{\alpha/2} \leq \frac{\overline{X} - \overline{Y} - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \leq z_{\alpha/2} \right \rbrace = 1 - \alpha$$  
 故 $\mu_1 - \mu_2$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \overline{X} - \overline{Y} - z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}, \overline{X} - \overline{Y} + z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}} \right]$$  
   
@@ -1038,7 +1038,7 @@ $$\left[ \overline{X} - \overline{Y} - z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{m} +
 $\overline{X} - \overline{Y} \sim N(\mu_1 - \mu_2, \sigma^2(\frac{1}{m} + \frac{1}{n}))$，则  
 $$\frac{(\overline{X} - \overline{Y} - (\mu_1 - \mu_2))^2}{\sigma^2(\frac{1}{m} + \frac{1}{n})} \sim \chi^2(1)$$  
 有  
-$$P\left\lbrace \chi^2_{\alpha/2}(1) \leq \frac{(\overline{X} - \overline{Y} - (\mu_1 - \mu_2))^2}{\sigma^2(\frac{1}{m} + \frac{1}{n})} \leq \chi^2_{1-\alpha/2}(1) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \chi^2_{\alpha/2}(1) \leq \frac{(\overline{X} - \overline{Y} - (\mu_1 - \mu_2))^2}{\sigma^2(\frac{1}{m} + \frac{1}{n})} \leq \chi^2_{1-\alpha/2}(1) \right \rbrace = 1 - \alpha$$  
 故 $\mu_1 - \mu_2$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \overline{X} - \overline{Y} - \sqrt{\frac{\sigma^2}{m} + \frac{\sigma^2}{n}} \chi^2_{1-\alpha/2}(1), \overline{X} - \overline{Y} - \sqrt{\frac{\sigma^2}{m} + \frac{\sigma^2}{n}} \chi^2_{\alpha/2}(1) \right]$$  
   
@@ -1047,9 +1047,9 @@ $$\left[ \overline{X} - \overline{Y} - \sqrt{\frac{\sigma^2}{m} + \frac{\sigma^2
 有 $\overline{Z} = \overline{X} - \overline{Y}$，$S^2 = \frac{1}{n-1} \sum_{i=1}^{n} (Z_i - \overline{Z})^2$，则  
 $$\frac{\overline{Z} - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \sim t(n-1)$$  
 有  
-$$P\left\lbrace -t_{\alpha/2}(n-1) \leq \frac{\overline{Z} - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \leq t_{\alpha/2}(n-1) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace -t_{\alpha/2}(n-1) \leq \frac{\overline{Z} - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \leq t_{\alpha/2}(n-1) \right \rbrace = 1 - \alpha$$  
 即  
-$$P\left\lbrace \overline{Z} - t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}} \leq \mu_1 - \mu_2 \leq \overline{Z} + t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}} \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \overline{Z} - t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}} \leq \mu_1 - \mu_2 \leq \overline{Z} + t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}} \right \rbrace = 1 - \alpha$$  
 故 $\mu_1 - \mu_2$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \overline{Z} - t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}, \overline{Z} + t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}} \right]$$  
   
@@ -1057,9 +1057,9 @@ $$\left[ \overline{Z} - t_{\alpha/2}(n-1) \sqrt{\frac{\sigma_1^2}{m} + \frac{\si
 ##### 均值 $\mu_1$ 和 $\mu_2$ 未知  
 $F = \frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2} \sim F(m-1, n-1)$  
 有  
-$$P\left\lbrace F_{\alpha/2}(m-1, n-1) \leq \frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2} \leq F_{1-\alpha/2}(m-1, n-1) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace F_{\alpha/2}(m-1, n-1) \leq \frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2} \leq F_{1-\alpha/2}(m-1, n-1) \right \rbrace = 1 - \alpha$$  
 即  
-$$P\left\lbrace \frac{S_1^2}{S_2^2} F_{\alpha/2}(m-1, n-1) \leq \frac{\sigma_1^2}{\sigma_2^2} \leq \frac{S_1^2}{S_2^2} F_{1-\alpha/2}(m-1, n-1) \right\rbrace = 1 - \alpha$$  
+$$P\left\lbrace \frac{S_1^2}{S_2^2} F_{\alpha/2}(m-1, n-1) \leq \frac{\sigma_1^2}{\sigma_2^2} \leq \frac{S_1^2}{S_2^2} F_{1-\alpha/2}(m-1, n-1) \right \rbrace = 1 - \alpha$$  
 故 $\frac{\sigma_1^2}{\sigma_2^2}$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \frac{S_1^2}{S_2^2} F_{\alpha/2}(m-1, n-1), \frac{S_1^2}{S_2^2} F_{1-\alpha/2}(m-1, n-1) \right]$$  
   
@@ -1067,7 +1067,7 @@ $$\left[ \frac{S_1^2}{S_2^2} F_{\alpha/2}(m-1, n-1), \frac{S_1^2}{S_2^2} F_{1-\a
 $\hat{\sigma}\_1^2 = \frac{1}{m} \sum_{i=1}^{m}(X\_i - \mu\_1)^2$，$\hat{\sigma}\_2^2 = \frac{1}{n} \sum_{i=1}^{n} (Y\_i - \mu\_2)^2$，则    
 $$G = \frac{\frac{m\hat{\sigma}\_1^2}{\sigma\_1^2} / m}{\frac{n\hat{\sigma}\_2^2}{\sigma\_2^2} / n} = \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} \sim F(m, n)$$    
 有  
-$$P\left\lbrace F\_{\alpha/2}(m, n) \leq \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} \leq F\_{1-\alpha/2}(m, n) \right\rbrace = 1 - \alpha$$    
+$$P\left\lbrace F\_{\alpha/2}(m, n) \leq \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} \leq F\_{1-\alpha/2}(m, n) \right \rbrace = 1 - \alpha$$    
 故 $\frac{\sigma\_1^2}{\sigma\_2^2}$ 的置信水平为 $1 - \alpha$ 的置信区间为  
 $$\left[ \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} F\_{\alpha/2}(m, n), \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} F\_{1-\alpha/2}(m, n) \right]$$  
   
@@ -1094,7 +1094,7 @@ $$\left[ \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} F\_{\alpha/2}(m, n), \frac{
 4. **显著性水平** $\alpha$ - 假设检验中犯第一类错误的概率
   1. **第一类错误** - 原假设为真，但被拒绝  
   2. **第二类错误** - 原假设为假，但被接受
-  $$P\left\lbrace \text{拒绝} H_0 | H_0 \text{为真} \right\rbrace = P\left\lbrace W | H_0 \right\rbrace \leq \alpha$$
+  $$P\left\lbrace \text{拒绝} H_0 | H_0 \text{为真} \right \rbrace = P\left\lbrace W | H_0 \right \rbrace \leq \alpha$$
   利用此式，可以确定拒绝域的临界点
 
 ### 假设检验的基本步骤
@@ -1108,9 +1108,9 @@ $$\left[ \frac{\hat{\sigma}\_1^2}{\hat{\sigma}\_2^2} F\_{\alpha/2}(m, n), \frac{
 ### 两类错误
 #### 第一类错误和第二类错误
 1. **第一类错误**：拒真概率 - 原假设为真，但被拒绝  
-$$P\left\lbrace \text{拒绝} H_0 | H_0 \text{为真} \right\rbrace = P\left\lbrace W | H_0 \right\rbrace = \alpha$$
+$$P\left\lbrace \text{拒绝} H_0 | H_0 \text{为真} \right \rbrace = P\left\lbrace W | H_0 \right \rbrace = \alpha$$
 2. **第二类错误**：取伪概率 - 原假设为假，但被接受
-$$P\left\lbrace \text{接受} H_0 | H_0 \text{为假} \right\rbrace = P\left\lbrace A | H_1 \right\rbrace = 1 - P\left\lbrace \overline{W} | H_1 \right\rbrace$$
+$$P\left\lbrace \text{接受} H_0 | H_0 \text{为假} \right \rbrace = P\left\lbrace A | H_1 \right \rbrace = 1 - P\left\lbrace \overline{W} | H_1 \right \rbrace$$
 
 #### 第一类错误和第二类错误的关系
 我们通常规定第一类错误的概率为 $\alpha$，即显著性水平，而第二类错误的概率为 $\beta$。  
@@ -1133,13 +1133,13 @@ $X \sim N(\mu, \sigma^2)$，$\mu_0$ 是一个已知的常数。
 1. **建立假设** - $H_0: \mu = \mu_0$，$H_1: \mu \neq \mu_0$
 2. **构造检验统计量** - $W = \frac{\overline{X} - \mu_0}{\sigma/\sqrt{n}} \sim N(0, 1)$
 3. **确定拒绝域的形式** - $H_1: \mu \neq \mu_0$，拒绝域为 $|W| > z_{\alpha/2}$
-4. **确定临界点** - $P\left\lbrace |W| > z_{\alpha/2} \right\rbrace = \alpha$
+4. **确定临界点** - $P\left\lbrace |W| > z_{\alpha/2} \right \rbrace = \alpha$
 5. **计算检验统计量的值** - 计算 $W$ 的值
 6. **作出判断** - 若 $|W| > z_{\alpha/2}$，则拒绝 $H_0$，否则接受 $H_0$
 
 #### 方差 $\sigma^2$ 已知 $H_0$: $\mu \leq \mu_0$
 1. **确定拒绝域的形式** - $H_1: \mu > \mu_0$，拒绝域为 $W > z_{\alpha}$
-2. **确定临界点** - $P\left\lbrace W > z_{\alpha} \right\rbrace = \alpha$
+2. **确定临界点** - $P\left\lbrace W > z_{\alpha} \right \rbrace = \alpha$
 
 ##### 方差 $\sigma^2$ 未知
 样本方差 $S^2$ 代替 $\sigma^2$，$T = \frac{\overline{X} - \mu_0}{S/\sqrt{n}} \sim t(n-1)$
@@ -1169,20 +1169,20 @@ $X \sim N(\mu, \sigma^2)$，$\sigma_0^2$ 是一个已知的常数。
 $s^2$ 为样本方差的观测值，$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2$。
 $H_0$ 成立时 $\frac{s^2}{\sigma_0^2}$ 的值应该接近于1。
 需要两个界限，即 $\frac{s^2}{\sigma_0^2}$ 的下界 $C_1$ 和上界 $C_2$，拒绝域为  
-$$W = \left\lbrace \frac{s^2}{\sigma_0^2} \leq C_1 \text{或} \frac{s^2}{\sigma_0^2} \geq C_2 \right\rbrace$$  
+$$W = \left\lbrace \frac{s^2}{\sigma_0^2} \leq C_1 \text{或} \frac{s^2}{\sigma_0^2} \geq C_2 \right \rbrace$$  
 为了计算方便，通常取 $C_1 = \chi^2_{1-\alpha/2}(n-1)$ 和 $C_2 = \chi^2_{\alpha/2}(n-1)$  
 
 $H_0$ 成立时，有  
 $$\frac{(n-1)s^2}{\sigma_0^2} \sim \chi^2(n-1)$$  
 有
-$$P\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < (n-1)C_1 \right\rbrace = \frac{\alpha}{2}, \quad P\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} > (n-1)C_2 \right\rbrace = \frac{\alpha}{2}$$  
+$$P\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < (n-1)C_1 \right \rbrace = \frac{\alpha}{2}, \quad P\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} > (n-1)C_2 \right \rbrace = \frac{\alpha}{2}$$  
 故知  
 $$C_1 = \frac{\chi^2_{1-\alpha/2}(n-1)}{n-1}, \quad C_2 = \frac{\chi^2_{\alpha/2}(n-1)}{n-1}$$  
 
 拒绝域为  
-$$W=\left\lbrace \frac{s^2}{\sigma_0^2} < \frac{\chi^2_{1-\alpha/2}(n-1)}{n-1} \text{或} \frac{s^2}{\sigma_0^2} > \frac{\chi^2_{\alpha/2}(n-1)}{n-1} \right\rbrace$$  
+$$W=\left\lbrace \frac{s^2}{\sigma_0^2} < \frac{\chi^2_{1-\alpha/2}(n-1)}{n-1} \text{或} \frac{s^2}{\sigma_0^2} > \frac{\chi^2_{\alpha/2}(n-1)}{n-1} \right \rbrace$$  
 等价的拒绝域为
-$$W=\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < \chi^2_{1-\alpha/2}(n-1) \text{或} \frac{(n-1)s^2}{\sigma_0^2} > \chi^2_{\alpha/2}(n-1) \right\rbrace$$
+$$W=\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < \chi^2_{1-\alpha/2}(n-1) \text{或} \frac{(n-1)s^2}{\sigma_0^2} > \chi^2_{\alpha/2}(n-1) \right \rbrace$$
 
 #### 均值 $\mu$ 已知
 $$\frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 \sim \chi^2(n)$$
@@ -1194,13 +1194,13 @@ $$\frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 \sim \chi^2(n)$$
 ##### $\chi^2$ 检验 $\mu$ 未知
 |         原假设 $H_0$          |         备择假设 $H_1$         |                   检验统计量                   |                                                                  拒绝域                                                                   |                         临界点                          |
 | :------------------------: | :------------------------: | :---------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------: |
-|  $\sigma^2 = \sigma_0^2$   | $\sigma^2 \neq \sigma_0^2$ | $\chi^2(n-1)=\frac{(n-1)s^2}{\sigma_0^2}$ | $\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < \chi^2_{1-\alpha/2}(n-1) \text{或} \frac{(n-1)s^2}{\sigma_0^2} > \chi^2_{\alpha/2}(n-1) \right\rbrace$ | $\chi^2_{1-\alpha/2}(n-1)$, $\chi^2_{\alpha/2}(n-1)$ |
-| $\sigma^2 \leq \sigma_0^2$ |  $\sigma^2 > \sigma_0^2$   |                  $\dots$                  |                                  $\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} > \chi^2_{\alpha}(n-1) \right\rbrace$                                  |                $\chi^2_{\alpha}(n-1)$                |
-| $\sigma^2 \geq \sigma_0^2$ |  $\sigma^2 < \sigma_0^2$   |                  $\dots$                  |                                 $\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < \chi^2_{1-\alpha}(n-1) \right\rbrace$                                 |               $\chi^2_{1-\alpha}(n-1)$               |
+|  $\sigma^2 = \sigma_0^2$   | $\sigma^2 \neq \sigma_0^2$ | $\chi^2(n-1)=\frac{(n-1)s^2}{\sigma_0^2}$ | $\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < \chi^2_{1-\alpha/2}(n-1) \text{或} \frac{(n-1)s^2}{\sigma_0^2} > \chi^2_{\alpha/2}(n-1) \right \rbrace$ | $\chi^2_{1-\alpha/2}(n-1)$, $\chi^2_{\alpha/2}(n-1)$ |
+| $\sigma^2 \leq \sigma_0^2$ |  $\sigma^2 > \sigma_0^2$   |                  $\dots$                  |                                  $\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} > \chi^2_{\alpha}(n-1) \right \rbrace$                                  |                $\chi^2_{\alpha}(n-1)$                |
+| $\sigma^2 \geq \sigma_0^2$ |  $\sigma^2 < \sigma_0^2$   |                  $\dots$                  |                                 $\left\lbrace \frac{(n-1)s^2}{\sigma_0^2} < \chi^2_{1-\alpha}(n-1) \right \rbrace$                                 |               $\chi^2_{1-\alpha}(n-1)$               |
 ##### $\chi^2$ 检验 $\mu$ 已知
 | 原假设 $H_0$ | 备择假设 $H_1$ | 检验统计量 | 拒绝域 | 临界点 |
 | :--------: | :--------: | :----: | :--: | :----: |
-| $\sigma^2 = \sigma_0^2$ | $\sigma^2 \neq \sigma_0^2$ | $\chi^2(n)=\frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2$ | $\left\lbrace \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 < \chi^2_{1-\alpha/2}(n) \text{或} \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 > \chi^2_{\alpha/2}(n) \right\rbrace$ | $\chi^2_{1-\alpha/2}(n)$, $\chi^2_{\alpha/2}(n)$ |
-| $\sigma^2 \leq \sigma_0^2$ | $\sigma^2 > \sigma_0^2$ | $\dots$ | $\left\lbrace \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 > \chi^2_{\alpha}(n) \right\rbrace$ | $\chi^2_{\alpha}(n)$ |
-| $\sigma^2 \geq \sigma_0^2$ | $\sigma^2 < \sigma_0^2$ | $\dots$ | $\left\lbrace \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 < \chi^2_{1-\alpha}(n) \right\rbrace$ | $\chi^2_{1-\alpha}(n)$ |
+| $\sigma^2 = \sigma_0^2$ | $\sigma^2 \neq \sigma_0^2$ | $\chi^2(n)=\frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2$ | $\left\lbrace \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 < \chi^2_{1-\alpha/2}(n) \text{或} \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 > \chi^2_{\alpha/2}(n) \right \rbrace$ | $\chi^2_{1-\alpha/2}(n)$, $\chi^2_{\alpha/2}(n)$ |
+| $\sigma^2 \leq \sigma_0^2$ | $\sigma^2 > \sigma_0^2$ | $\dots$ | $\left\lbrace \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 > \chi^2_{\alpha}(n) \right \rbrace$ | $\chi^2_{\alpha}(n)$ |
+| $\sigma^2 \geq \sigma_0^2$ | $\sigma^2 < \sigma_0^2$ | $\dots$ | $\left\lbrace \frac{1}{\sigma_0^2} \sum_{i=1}^{n} (X_i - \mu)^2 < \chi^2_{1-\alpha}(n) \right \rbrace$ | $\chi^2_{1-\alpha}(n)$ |
 

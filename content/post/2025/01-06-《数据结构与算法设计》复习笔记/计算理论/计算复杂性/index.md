@@ -1,6 +1,6 @@
 ---
 title: "计算复杂性"
-slug: "01 06 《数据结构与算法设计》复习笔记/计算理论/计算复杂性"
+slug: "2025/01 06 《数据结构与算法设计》复习笔记/计算理论/计算复杂性"
 date: "2025-01-06T11:26:30+08:00"
 lastmod: "2025-01-06T11:26:30+08:00"
 hidden: true
@@ -32,7 +32,7 @@ tags: ["数据结构与算法设计", "计算机科学", "计算理论"]
    $$f(n) \neq o(f(n))$$
 
 #### 时间复杂性类
-$$\mathrm{TIME}(f(n)) = \{L \  | \  \text{ 存在确定性 } O(f(n)) \text{ 时间图灵机判定 } L \ \}$$
+$$\mathrm{TIME}(f(n)) = \lbrace L \  | \  \text{ 存在确定性 } O(f(n)) \text{ 时间图灵机判定 } L \ \rbrace$$
 
 ### P 类
 $\mathrm{P}$ 类是单带确定 $\mathrm{TM}$ 在所有可以在多项式时间内判定的问题的集合。
@@ -47,7 +47,7 @@ $$\mathrm{P} = \bigcup\_{k \in \mathbb{N}} \mathrm{TIME}(n^k)$$
 $\mathrm{NP}$ 类是单带非确定 $\mathrm{TM}$ 在所有可以在多项式时间内判定的问题的集合。
 $$\mathrm{NP} = \bigcup\_{k \in \mathbb{N}} NTIME(n^k)$$
 其中 $NTIME(f(n))$ 是非确定性图灵机在时间 $f(n)$ 内可以接受的语言的集合。
-$$NTIME(f(n)) = \{L \  | \  \text{ 存在非确定性 } O(f(n)) \text{ 时间图灵机判定 } L \ \}$$
+$$NTIME(f(n)) = \lbrace L \  | \  \text{ 存在非确定性 } O(f(n)) \text{ 时间图灵机判定 } L \ \rbrace$$
 > 非确定性图灵机中猜测的步骤不算做时间复杂度。
 > 例如选取一个子集 / 一个路径 / 一个排列等。
 
@@ -58,7 +58,7 @@ $\mathrm{P} = \mathrm{NP} ?$ 是一个重要的未解问题。
 
 
 #### 验证机
-$$A = \{ w \ | \ \text{存在一个证明字符串 } c \text{ 使得 } M \text{ 在输入 } \langle w, c \rangle \text{ 上接受} \}$$
+$$A = \lbrace w \ | \ \text{存在一个证明字符串 } c \text{ 使得 } M \text{ 在输入 } \langle w, c \rangle \text{ 上接受} \rbrace$$
 称 $M$ 是 $A$ 的**验证机**。
 
 判断一个问题是否属于 $\mathrm{NP}$ 类，可以通过构造 $\mathrm{NTM}$ 或者验证机来判断。
@@ -74,7 +74,7 @@ $$A = \{ w \ | \ \text{存在一个证明字符串 } c \text{ 使得 } M \text{ 
 #### 
 
 #### coNP 类
-$$\mathrm{coNP} = \{L \ | \ \overline{L} \in \mathrm{NP} \}$$
+$$\mathrm{coNP} = \lbrace L \ | \ \overline{L} \in \mathrm{NP} \rbrace$$
 $\mathrm{NP} =? \mathrm{coNP}$ 是一个重要的未解问题。
 $$\mathrm{P} \subseteq \mathrm{NP} \cap \mathrm{coNP}$$
 
@@ -84,7 +84,7 @@ $\mathrm{NP}$ 中某些问题的复杂性与整个 $\mathrm{NP}$ 类的复杂性
 这些问题称为 $\mathrm{NP}$ 完全问题。
 
 #### $\mathrm{SAT}$ 问题
-$$\mathrm{SAT} = \{ \phi \ | \ \phi \text{ 是一个可满足的布尔公式} \}$$
+$$\mathrm{SAT} = \lbrace \phi \ | \ \phi \text{ 是一个可满足的布尔公式} \rbrace$$
 
 #### 理论意义
 1. 研究 $\mathrm{P}$ 和 $\mathrm{NP}$ 之间的关系可以只关注于一个问题的算法。

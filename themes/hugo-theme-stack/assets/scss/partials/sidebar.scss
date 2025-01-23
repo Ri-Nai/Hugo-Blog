@@ -101,6 +101,11 @@
         height: var(--sidebar-avatar-size);
         flex-shrink: 0;
 
+        user-select: none;
+        &:hover {
+            scale: 1.2;
+        }
+        transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); // Add smooth transition for font-size
         .site-logo {
             width: 100%;
             height: 100%;
@@ -123,6 +128,10 @@
             font-size: var(--emoji-font-size);
             background-color: var(--card-background);
             box-shadow: var(--shadow-l2);
+            &:hover {
+                scale: 1.2;
+            }
+            transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); // Add smooth transition for font-size
         }
     }
 

@@ -1,6 +1,6 @@
 ---
 title: "《离散数学》复习笔记"
-slug: "01 06 《离散数学》复习笔记"
+slug: "2025/01 06 《离散数学》复习笔记"
 description:
 date: "2025-01-06T11:13:33+08:00"
 lastmod: "2025-01-06T11:13:33+08:00"
@@ -29,13 +29,13 @@ tags: ["离散数学", "计算机科学"]
     {{< include "代数结构/index.md" >}}
 </div>
 
-# {{< linking "图论" >}} <button onclick="toggleContent('content2')" id="button1"></button>
-<div id="content2" style="display:none;">
+# {{< linking "图论" >}} <button onclick="toggleContent('content3')" id="button1"></button>
+<div id="content3" style="display:none;">
     {{< include "图论/index.md" >}}
 </div>
 
 <style>
-    button {
+    .article-content button {
         background-color: #008CBA; /* Blue */
         border: none;
         color: white;
@@ -52,26 +52,26 @@ tags: ["离散数学", "计算机科学"]
         align-items: center;
         justify-content: center;
     }
-    button:before {
+    .article-content button:before {
         content: "显示内容";
     }
-    button:after {
+    .article-content button:after {
         content: "隐藏内容";
         display: none;
     }
-    button.active {
+    .article-content button.active {
         background-color: #FF9800; /* Orange when active */
     }
-    button.active:before {
+    .article-content button.active:before {
         display: none;
     }
-    button.active:after {
+    .article-content button.active:after {
         display: inline;
     }
-    button:hover {
+    .article-content button:hover {
         background-color: #005f73; /* Darker blue on hover */
     }
-    button.active:hover {
+    .article-content button.active:hover {
         background-color: #EF6C00; /* Darker orange on hover when active */
     }
 </style>

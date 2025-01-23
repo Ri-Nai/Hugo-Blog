@@ -3,8 +3,12 @@
 {{ $file_name := substr $file 0 (sub (countrunes $file) 4) }}
 {{ $depth := 0 }}
 {{ if in $slug "/" }}
-    {{ $depth = sub (len (split $slug "/")) 1}}
+    {{ $depth = sub (len (split $slug "/")) 2}}
 {{ else }}
+    {{ $depth = 0 }}
+{{ end }}
+
+{{ if lt $depth 0 }}
     {{ $depth = 0 }}
 {{ end }}
 

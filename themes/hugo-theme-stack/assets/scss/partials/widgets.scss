@@ -22,14 +22,15 @@
         a {
             background: var(--card-background);
             box-shadow: var(--shadow-l1);
-            border-radius: var(--tag-border-radius);
-            padding: 8px 20px;
+            border-radius: 10px;
+            padding: 14px 20px;
             color: var(--card-text-color-main);
             font-size: 1.4rem;
-            transition: box-shadow 0.3s ease;
-
+            // transition: box-shadow 0.3s ease;
+            transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
             &:hover {
                 box-shadow: var(--shadow-l2);
+                scale: 1.1;
             }
         }
     }

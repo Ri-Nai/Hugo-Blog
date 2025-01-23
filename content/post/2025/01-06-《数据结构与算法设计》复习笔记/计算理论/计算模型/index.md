@@ -1,6 +1,6 @@
 ---
 title: "计算模型"
-slug: "01 06 《数据结构与算法设计》复习笔记/计算理论/计算模型"
+slug: "2025/01 06 《数据结构与算法设计》复习笔记/计算理论/计算模型"
 date: "2025-01-06T11:26:30+08:00"
 lastmod: "2025-01-06T11:26:30+08:00"
 hidden: true
@@ -46,7 +46,7 @@ tags: ["数据结构与算法设计", "计算机科学", "计算理论"]
 记为 $\delta(r\_0, w) \in F$。
 
 ### 识别语言
-对于一个有限自动机 $M$，若 $A = \{w \in \Sigma^* | \delta(q\_0, w) \in F\}$，则称 $A$ 是 $M$ 的语言，记为 $L(M) = A$，也称 $M$ 识别 $A$。
+对于一个有限自动机 $M$，若 $A = \lbrace w \in \Sigma^* | \delta(q\_0, w) \in F \rbrace$，则称 $A$ 是 $M$ 的语言，记为 $L(M) = A$，也称 $M$ 识别 $A$。
 
 $M$ 识别的语言唯一，不识别任意其他语言。
 
@@ -57,9 +57,9 @@ $M$ 识别的语言唯一，不识别任意其他语言。
 若两个有限自动机的语言相同，则称它们是**等价**的。
 
 ### 正则运算
-1. 并：$A \cup B = \{w | w \in A \text{ 或 } w \in B\}$。
-2. 连接：$A \circ B = \{w | w = w\_1w\_2, w\_1 \in A, w\_2 \in B\}$。
-3. 星号：$A^* = A^0 \cup A^1 \cup A^2 \cup \cdots$，其中 $A^0 = \{\varepsilon\}$，$A^1 = A$，$A^2 = A \circ A$。  即 $A^*=\{w\_1w\_2\cdots w\_n | n \ge 0, w\_i \in A\}$。
+1. 并：$A \cup B = \lbrace w | w \in A \text{ 或 } w \in B \rbrace$。
+2. 连接：$A \circ B = \lbrace w | w = w\_1w\_2, w\_1 \in A, w\_2 \in B \rbrace$。
+3. 星号：$A^* = A^0 \cup A^1 \cup A^2 \cup \cdots$，其中 $A^0 = \lbrace \varepsilon \rbrace$，$A^1 = A$，$A^2 = A \circ A$。  即 $A^*=\lbrace w\_1w\_2\cdots w\_n | n \ge 0, w\_i \in A \rbrace$。
 4. 补：$A^c = \Sigma^* - A$。
 
 正则语言对这四种运算封闭。
@@ -99,10 +99,10 @@ $\mathrm{NFA}$：$\mathrm{N} = (Q, \Sigma, \delta, q\_0, F)$
 $\mathrm{DFA}$：$\mathrm{M} = (Q', \Sigma, \delta', q\_0', F')$ 
 
 1. $Q' = 2^Q$，即 $\mathrm{DFA}$ 的状态集是 $\mathrm{NFA}$ 的状态集的幂集。
-2. $E$ 表示 $\varepsilon$ 闭包，即 $E(S) = \{q \ |\  q \in S \text{ 或 } q \text{ 可以通过若干个 }\varepsilon\text{ 转移到 } S\}$。
-3. $q\_0' = E(\{q\_0\})$。
+2. $E$ 表示 $\varepsilon$ 闭包，即 $E(S) = \lbrace q \ |\  q \in S \text{ 或 } q \text{ 可以通过若干个 }\varepsilon\text{ 转移到 } S \rbrace$。
+3. $q\_0' = E(\lbrace q\_0 \rbrace)$。
 4. $\delta'(S, a) = E(\bigcup\_{q \in S} \delta(q, a))$，其中 $S \in Q'$，$a \in \Sigma$。
-5. $F' = \{S \in Q' \ |\  S \cap F \neq \varnothing \}$。
+5. $F' = \lbrace S \in Q' \ |\  S \cap F \neq \varnothing \rbrace$。
 
 ### 正则表达式
 若 $R$ 是一个正则表达式，则 $R$ 是
@@ -114,12 +114,12 @@ $\mathrm{DFA}$：$\mathrm{M} = (Q', \Sigma, \delta', q\_0', F')$
 6. $(R\_1^*)$，$R\_1$ 是正则表达式。
 
 每个正则表达式 $R$ 表示一种正则语言 $L(R)$。
-1. $L(a) = \{a\}$。
-2. $L(\varepsilon) = \{\varepsilon\}$。
+1. $L(a) = \lbrace a \rbrace$。
+2. $L(\varepsilon) = \lbrace \varepsilon \rbrace$。
 3. $L(\varnothing) = \varnothing$。
 4. $L(R\_1 \cup R\_2) = L(R\_1) \cup L(R\_2)$。
 5. $L(R\_1 \circ R\_2) = L(R\_1) \circ L(R\_2)$。
-6. $L(R\_1^*) = (L(R\_1))^*$。
+6. $L(R\_1^\*) = (L(R\_1))^\*$。
 
 
 #### 正则表达式与有限自动机等价
@@ -143,7 +143,7 @@ $\mathrm{DFA}$：$\mathrm{M} = (Q', \Sigma, \delta', q\_0', F')$
 1. $Q$ 是有限集，称为**状态集**。
 2. $\Sigma$ 是有限集，称为**输入字母表**，不包含特殊空白符号 $\sqcup$。
 3. $\Gamma$ 是有限集，称为**带子字母表**，$\Sigma \subseteq \Gamma$，且 $\sqcup \in \Gamma - \Sigma$。
-4. $\delta: Q \times \Gamma \to Q \times \Gamma \times \{L, R\}$ 是**转移函数**。即 $\delta(q, a) = (r, b, L / R)$ 表示在状态 $q$ 读入字符 $a$ 后，将字符 $a$ 替换为字符 $b$，转移到状态 $r$，第三个参数 $L / R$ 表示下一步向左 / 向右移动。
+4. $\delta: Q \times \Gamma \to Q \times \Gamma \times \lbrace L, R \rbrace$ 是**转移函数**。即 $\delta(q, a) = (r, b, L / R)$ 表示在状态 $q$ 读入字符 $a$ 后，将字符 $a$ 替换为字符 $b$，转移到状态 $r$，第三个参数 $L / R$ 表示下一步向左 / 向右移动。
 5. $q\_0 \in Q$ 是**初始状态**。
 6. $q\_{\text{accept}} \in Q$ 是**接受状态**。
 7. $q\_{\text{reject}} \in Q$ 是**拒绝状态**，且 $q\_{\text{reject}} \neq q\_{\text{accept}}$。
@@ -164,7 +164,7 @@ $\mathrm{DFA}$：$\mathrm{M} = (Q', \Sigma, \delta', q\_0', F')$
 - **起始格局**：$q\_0w$。
 - **接受格局**：$uq\_{\text{accept}}v$。
 - **拒绝格局**：$uq\_{\text{reject}}v$。
-- **停机格局**：$uqv$，其中 $q \in \{q\_{\text{accept}}, q\_{\text{reject}}\}$。
+- **停机格局**：$uqv$，其中 $q \in \lbrace q\_{\text{accept}}, q\_{\text{reject}} \rbrace$。
 
 #### 格局的转移
 - 如果 $\delta(q\_i, b) = (q\_j, c, L)$，则
@@ -247,7 +247,7 @@ graph TD
 {{< linkingImage "输入为对象的图灵机举例.png" >}}
 
 ### 非确定性图灵机
-非确定性图灵机 $\mathrm{(Nondeterministic Turing Machine, NTM)}$ 是一个七元组 $(Q, \Sigma, \Gamma, \delta, q\_0, q\_{\text{accept}}, q\_{\text{reject}})$，它的转移函数是 $\delta: Q \times \Gamma \to P(Q \times \Gamma \times \{L, R\})$。
+非确定性图灵机 $\mathrm{(Nondeterministic Turing Machine, NTM)}$ 是一个七元组 $(Q, \Sigma, \Gamma, \delta, q\_0, q\_{\text{accept}}, q\_{\text{reject}})$，它的转移函数是 $\delta: Q \times \Gamma \to P(Q \times \Gamma \times \lbrace L, R \rbrace)$。
 
 如果计算的某个分支导致接受状态，则机器接受该输入。
 

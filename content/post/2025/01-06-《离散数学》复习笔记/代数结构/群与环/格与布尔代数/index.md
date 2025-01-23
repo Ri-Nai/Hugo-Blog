@@ -1,6 +1,6 @@
 ---
 title: "格与布尔代数"
-slug: "01 06 《离散数学》复习笔记/代数结构/群与环/格与布尔代数"
+slug: "2025/01 06 《离散数学》复习笔记/代数结构/群与环/格与布尔代数"
 date: "2025-01-06T21:14:24+08:00"
 lastmod: "2025-01-06T21:14:24+08:00"
 hidden: true
@@ -83,7 +83,7 @@ $$\forall a, b, c, d \in L, a \preccurlyeq b \land c \preccurlyeq d \Rightarrow 
 设 $\langle L, \wedge, \vee \rangle$ 是一个格，若 $\forall a, b, c \in L$，满足分配律：
 
 $$\begin{aligned}
-a \wedge (b \vee c) &= (a \wedge b) \vee (a \wedge c)  \newline 
+a \wedge (b \vee c) &= (a \wedge b) \vee (a \wedge c) \newline 
 a \vee (b \wedge c) &= (a \vee b) \wedge (a \vee c)
 \end{aligned}$$
 
@@ -127,7 +127,7 @@ $a$ 和 $a'$ 互为补元。
 ### 布尔代数
 如果一个格是**有补分配格**，则称其为**布尔代数**，记为 $\langle B, \wedge, \vee, ', 0, 1 \rangle$。
 
-实例：{{< linking "代数结构/群与环/#正因子格|" >}}、{{< linking "集合论/集合代数#幂集|幂集格" >}}、{{< linking "数理逻辑/命题逻辑#合式公式|命题代数" >}}、{{< linking "代数结构/群与环/群、子群与陪集#子群格|子群格" >}}。
+实例：{{< linking "代数结构/群与环/#正因子格|正因子格（若每个质因数都只出现一次）" >}}、{{< linking "集合论/集合代数#幂集|幂集格" >}}、{{< linking "数理逻辑/命题逻辑#合式公式|命题代数" >}}、{{< linking "代数结构/群与环/群、子群与陪集#子群格|子群格" >}}。
 
 #### 有限布尔代数
 论域 $B$ 为有限集合的布尔代数称为**有限布尔代数**。

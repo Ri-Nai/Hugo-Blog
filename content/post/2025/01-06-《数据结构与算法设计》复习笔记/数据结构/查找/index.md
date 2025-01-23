@@ -1,6 +1,6 @@
 ---
 title: "查找"
-slug: "01 06 《数据结构与算法设计》复习笔记/数据结构/查找"
+slug: "2025/01 06 《数据结构与算法设计》复习笔记/数据结构/查找"
 date: "2025-01-06T11:26:30+08:00"
 lastmod: "2025-01-06T11:26:30+08:00"
 hidden: true
@@ -105,7 +105,7 @@ AVL 树是一种自平衡二叉查找树，任意结点的左右子树的高度�
 
 ### 分块查找
 分块查找是一种索引顺序表的查找方法，将数据表分为若干块，每一块中的元素可以是无序的，但是块之间是有序的。
-要求 $ID[i - 1].max \text{ \newline _} key < ID[i].min \text{ \newline _} key$。
+要求 $ID[i - 1].max \_- key < ID[i].min \_- key$。
 
 {{< linkingImage "分块查找.png" >}}
 
@@ -190,11 +190,11 @@ $$H\_i = (H\_0 \pm i^2) \mod m$$
 $m$ 是散列表长度，它应该是一个值为 $4k+3$ 的素数。
 
 #### 双散列法
-$$H\_i = (hash(key) + i \cdot hash\text{ \newline _}random(key)) \mod m$$
-其中 $hash\text{ \newline _}random(key)$ 是一个与关键码 $key$ 相关的伪随机数， $gcd(hash\text{ \newline _}random(key), m) = 1$。
+$$H\_i = (hash(key) + i \cdot hash\_-random(key)) \mod m$$
+其中 $hash\_-random(key)$ 是一个与关键码 $key$ 相关的伪随机数， $gcd(hash\_-random(key), m) = 1$。
 
-$hash\text{ \newline _}ramdom$ 的取法很多，当 $m$ 为素数时，可以取
-$$hash\text{ \newline _}ramdon(key) = \begin{cases} key \% (m - 1) + 1  \newline  \lfloor key / m \rfloor \% (m - 2) + 1  \newline  \cdots \end{cases}$$
+$hash\_-ramdom$ 的取法很多，当 $m$ 为素数时，可以取
+$$hash\_-ramdon(key) = \begin{cases} key \mod (m - 1) + 1  \newline\lfloor key / m \rfloor \mod (m - 2) + 1  \newline\cdots \end{cases}$$
 
 ### 解决冲突的链地址法
 将 $hash(key)$ 相同的元素存储在同一个链表中。

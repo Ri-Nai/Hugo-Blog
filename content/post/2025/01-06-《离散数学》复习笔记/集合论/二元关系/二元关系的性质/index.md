@@ -1,6 +1,6 @@
 ---
 title: "二元关系的性质"
-slug: "01 06 《离散数学》复习笔记/集合论/二元关系/二元关系的性质"
+slug: "2025/01 06 《离散数学》复习笔记/集合论/二元关系/二元关系的性质"
 date: "2025-01-06T22:32:26+08:00"
 lastmod: "2025-01-06T22:32:26+08:00"
 hidden: true
@@ -64,28 +64,28 @@ $G\_R = (A, R)$，$A$ 是顶点集，$R$ 是边集，$R$ 是 $A$ 到 $A$ 的关�
 关系图适合表示有穷集 $A$ 上的关系 
 
 ## 关系的运算
-- **定义域**：$domR = \lbrace x \ | \ \exists y(xRy) \rbrace$
-- **值域**：$ranR = \lbrace y \ | \ \exists x(xRy) \rbrace$
-- **域**：$fldR = domR \cup ranR$
+- **定义域**：$\mathrm{dom}R = \lbrace x \ | \ \exists y(xRy) \rbrace$
+- **值域**：$\mathrm{ran}R = \lbrace y \ | \ \exists x(xRy) \rbrace$
+- **域**：$fldR = \mathrm{dom}R \cup \mathrm{ran}R$
 
 - **逆运算**：$R^{-1} = \lbrace <y, x> \ | \ <x, y> \in R \rbrace$
 - **复合运算**：$R \circ S = \lbrace <x, z> \ | \ \exists y(xRy \land ySz) \rbrace$
     - $R \circ S \neq S \circ R$
 - **幂运算**：
 $$R^n = \begin{cases}
-{<x, x> \ | \ x \in A} = I_A & n = 0  \newline 
+{<x, x> \ | \ x \in A} = I\_A & n = 0 \newline 
 R \circ R^{n-1} & n > 0
 \end{cases}$$
 
 - **限制**：$R \upharpoonright A = R \cap (A \times A) = \lbrace <x, y> \ | \ <x, y> \in R \land x \in A \rbrace$
     - $R$ 在 $A$ 上的限制 $R \upharpoonright A$ 是 $R$ 在 $A$ 上的部分，是 $R$ 的子关系，即 $R \upharpoonright A \subseteq R$
-- **像**：$R[A] = \lbrace y \ | \ \exists x(x \in A \land xRy) \rbrace = ran(R \upharpoonright A)$
-    - A 在 $R$ 下的像 $R[A]$ 是 $ranR$ 的子集，即 $R[A] \subseteq ranR$           
+- **像**：$R[A] = \lbrace y \ | \ \exists x(x \in A \land xRy) \rbrace = \mathrm{ran}(R \upharpoonright A)$
+    - A 在 $R$ 下的像 $R[A]$ 是 $\mathrm{ran}R$ 的子集，即 $R[A] \subseteq \mathrm{ran}R$           
 
 	
 #### 关系的运算性质
 - 逆运算的逆运算：$(F^{-1})^{-1} = F$
-- 逆运算的域：$domR^{-1} = ranR, \quad ranR^{-1} = domR$
+- 逆运算的域：$\mathrm{dom}R^{-1} = \mathrm{ran}R, \quad \mathrm{ran}R^{-1} = \mathrm{dom}R$
 
 - 复合运算的逆运算：$(F \circ G)^{-1} = G^{-1} \circ F^{-1}$
 - 复合运算的结合律：$(F \circ G) \circ H = F \circ (G \circ H)$
@@ -103,7 +103,7 @@ F \circ (G \cap H) \supseteq (F \circ G) \cap (F \circ H)
 - 限制与像运算的分配律：
 $$\begin{aligned}
 F \upharpoonright (A \cup B) &= F \upharpoonright A \cup F \upharpoonright B &
-F \upharpoonright (A \cap B) &= F \upharpoonright A \cap F \upharpoonright B  \newline 
+F \upharpoonright (A \cap B) &= F \upharpoonright A \cap F \upharpoonright B \newline 
 F [A \cup B] &= F[A] \cup F[B] &
 F [A \cap B] &\subseteq F[A] \cap F[B]
 \end{aligned}$$
@@ -134,4 +134,4 @@ $$(R^m)^n = R^{mn}$$
 | $R\_1 \cap R\_2$  | $\checkmark$ | $\checkmark$ | $\checkmark$ | $\checkmark$ | $\checkmark$ |
 | $R\_1 \cup R\_2$  | $\checkmark$ | $\checkmark$ | $\checkmark$ |   $\times$   |   $\times$   |
 |   $R\_1 - R\_2$   |   $\times$   | $\checkmark$ | $\checkmark$ | $\checkmark$ |   $\times$   |
-| $R\_1 \circ R\_2$ |   $\times$   |   $\times$   |   $\times$   |   $\times$   | $\checkmark$ |
+| $R\_1 \circ R\_2$ |   $\checkmark$   |   $\times$   |   $\times$   |   $\times$   | $\checkmark$ |

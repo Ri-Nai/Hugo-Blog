@@ -1,6 +1,6 @@
 ---
 title: "《大学物理AII》复习笔记"
-slug: "12 16 《大学物理AII》复习笔记"
+slug: "2024/12 16 《大学物理AII》复习笔记"
 description:
 date: "2024-12-16T20:59:12+08:00"
 lastmod: "2024-12-16T20:59:12+08:00"
@@ -30,7 +30,7 @@ tags: ["大学物理", "电磁学", "近代物理"]
 </div>
 
 <style>
-    button {
+    .article-content button {
         background-color: #008CBA; /* Blue */
         border: none;
         color: white;
@@ -47,26 +47,26 @@ tags: ["大学物理", "电磁学", "近代物理"]
         align-items: center;
         justify-content: center;
     }
-    button:before {
+    .article-content button:before {
         content: "显示内容";
     }
-    button:after {
+    .article-content button:after {
         content: "隐藏内容";
         display: none;
     }
-    button.active {
+    .article-content button.active {
         background-color: #FF9800; /* Orange when active */
     }
-    button.active:before {
+    .article-content button.active:before {
         display: none;
     }
-    button.active:after {
+    .article-content button.active:after {
         display: inline;
     }
-    button:hover {
+    .article-content button:hover {
         background-color: #005f73; /* Darker blue on hover */
     }
-    button.active:hover {
+    .article-content button.active:hover {
         background-color: #EF6C00; /* Darker orange on hover when active */
     }
 </style>

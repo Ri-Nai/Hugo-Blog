@@ -20,9 +20,15 @@
                     {{ with ($.Resources.GetMatch (printf "%s" (. | safeURL))) }}
                         {{ $permalink = .RelPermalink }}
                     {{ end }}
-                    <div class="article-image">
-                        <img src="{{ $permalink }}" loading="lazy">
-                    </div>
+                    {{ if eq (path.Ext $permalink) ".svg" }}
+                        <div class="article-image">
+                            <img src="{{ $permalink }}" type="image/svg+xml" loading="lazy">
+                        </div>
+                    {{ else }}
+                        <div class="article-image">
+                            <img src="{{ $permalink }}" loading="lazy">
+                        </div>
+                    {{ end }}
                 {{ end }}
             </a>
         </article>
