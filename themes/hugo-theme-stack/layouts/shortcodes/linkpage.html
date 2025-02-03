@@ -1,0 +1,45 @@
+{{ $website := .Get 0 }}
+{{ $title := .Get 1 }}
+{{ $description := .Get 2 }}
+{{ $image := .Get 3 }}
+
+<div class="linkpage-wrapper">
+    <div class="linkpage">
+        <a href="{{ $website }}" target="_blank" rel="noopener">
+            <div class="linkpage-details">
+                <h2 class="linkpage-title">
+                    {{- $title -}}
+                </h2>
+                <footer class="linkpage-time">
+                    {{ with $description }}
+                    {{ . }}
+                    {{ else }}
+                    {{ $website }}
+                    {{ end }}
+                </footer>
+            </div>
+            {{ with $image }}
+            {{ $permalink := . }}
+            {{ with ($.Page.Resources.GetMatch (printf "%s" (. | safeURL))) }}
+            {{ $permalink = .RelPermalink }}
+            {{ end }}
+            {{ if eq (path.Ext $permalink) ".svg" }}
+            {{ $svgFile := $.Page.Resources.GetMatch (printf "%s" (. | safeURL)) }}
+            {{ if $svgFile }}
+            <div class="linkpage-image">
+                {{ $svgFile.Content | safeHTML }}
+            </div>
+            {{ else }}
+            <div class="linkpage-image">
+                <img src="{{ $permalink }}" loading="lazy">
+            </div>
+            {{ end }}
+            {{ else }}
+            <div class="linkpage-image">
+                <img src="{{ $permalink }}" loading="lazy">
+            </div>
+            {{ end }}
+            {{ end }}
+        </a>
+    </div>
+</div>

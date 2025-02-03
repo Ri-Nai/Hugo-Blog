@@ -1,0 +1,102 @@
+.linkpage-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    --linkpage-image-size: 50px;
+
+    @include respond(md) {
+        --linkpage-image-size: 60px;
+    }
+
+    height: auto;
+    width: 100%;
+
+    .linkpage {
+        max-width: 65%;
+        margin: 15px;
+        border-radius: var(--card-border-radius); // Ensure each linkpage has rounded corners
+        box-shadow: var(--shadow-l1); // Add shadow to each linkpage
+        overflow: hidden; // Ensure content doesn't overflow
+        background-color: var(--card-background-darker); // Ensure background color is applied to each linkpage
+
+        &>a {
+            display: flex;
+            align-items: center;
+            padding: var(--small-card-padding);
+            gap: 15px;
+        }
+
+        border-bottom: 1.5px solid var(--card-separator-color);
+
+        .linkpage-details {
+            flex-grow: 1;
+            padding: 0;
+            min-height: var(--linkpage-image-size);
+            gap: 10px;
+        }
+
+        .linkpage-title {
+            margin: 0;
+            font-size: 1.6rem;
+
+            @include respond(md) {
+                font-size: 1.8rem;
+            }
+        }
+
+        transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); // Add smooth transition for font-size
+
+        &:hover {
+            scale: 1.07; // Scale up the font-size on hover
+        }
+
+        .linkpage-image {
+            flex-shrink: 0; // 这一行防止图片宽度被压缩
+            color: var(--card-text-color-main);
+
+            img {
+                width: var(--linkpage-image-size);
+                height: var(--linkpage-image-size);
+                object-fit: cover;
+                border-radius: var(--card-border-radius);
+            }
+
+            svg {
+                width: var(--linkpage-image-size);
+                height: var(--linkpage-image-size);
+                border-radius: var(--card-border-radius);
+                border-style: none;
+                overflow-clip-margin: content-box;
+                overflow: clip;
+            }
+
+            transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); // Add smooth transition for transform
+
+            &:hover {
+                transform: scale(1.2); // Scale up the linkpage-image on hover
+            }
+        }
+
+        .linkpage-time {
+            font-size: 1.4rem;
+            color: var(--card-text-color-tertiary);
+            gap: 15px;
+        }
+
+        h2 {
+            all: unset;
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+            color: var(--card-text-color-main);
+
+        }
+    }
+
+}
