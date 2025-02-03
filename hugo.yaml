@@ -276,3 +276,5 @@ markup:
 
 frontmatter:
   lastmod: [":fileModTime", "lastmod"]
+
+timeout: 120s
