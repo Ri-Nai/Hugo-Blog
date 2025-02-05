@@ -7,7 +7,7 @@ lastmod: 2025-01-11T02:10:45+08:00
 image: cover.png
 math:
 license:
-hidden: false
+hidden: true
 draft: false
 categories: ["课余沉思"]
 tags: ["大学物理", "概率论与数理统计", "数据结构", "离散数学", "算法竞赛"]
