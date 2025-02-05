@@ -7,7 +7,7 @@ lastmod: "2024-07-18T22:09:51+08:00"
 image: cover.jpg
 math:
 license:
-hidden: false
+hidden: true
 draft: false
 categories: ["生活碎片"]
 tags: [""]
