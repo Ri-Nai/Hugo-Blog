@@ -13,12 +13,12 @@ categories: ["学习笔记"]
 tags: ["大学物理", "电磁学"]
 ---
 # {{< linking "电磁学/静电场" >}}
-{{< include "电磁学/静电场/index.md" >}}
+{{< include "电磁学/静电场/index_.md" >}}
 
 # {{< linking "电磁学/静电场中的导体和电介质" >}}
-{{< include "电磁学/静电场中的导体和电介质/index.md" >}}
+{{< include "电磁学/静电场中的导体和电介质/index_.md" >}}
 
 # {{< linking "电磁学/恒定磁场" >}}
-{{< include "电磁学/恒定磁场/index.md" >}}
+{{< include "电磁学/恒定磁场/index_.md" >}}
 # {{< linking "电磁学/电磁感应和电磁场" >}}
-{{< include "电磁学/电磁感应和电磁场/index.md" >}}
+{{< include "电磁学/电磁感应和电磁场/index_.md" >}}

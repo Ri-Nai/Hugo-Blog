@@ -4,7 +4,7 @@ slug: "2025/01 06 《离散数学》复习笔记"
 description:
 date: "2025-01-06T11:13:33+08:00"
 lastmod: "2025-01-06T11:13:33+08:00"
-image: cover.png
+image: 2025/01-06-离散数学复习笔记/cover.png
 math:
 license:
 hidden: false
@@ -15,23 +15,23 @@ tags: ["离散数学", "计算机科学"]
 
 # {{< linking "数理逻辑" >}} <button onclick="toggleContent('content0')" id="button0"></button>
 <div id="content0" style="display:none;">
-    {{< include "数理逻辑/index.md" >}}
+    {{< include "数理逻辑/index_.md" >}}
 </div>
 
 
 # {{< linking "集合论" >}} <button onclick="toggleContent('content1')" id="button1"></button>
 <div id="content1" style="display:none;">
-    {{< include "集合论/index.md" >}}
+    {{< include "集合论/index_.md" >}}
 </div>
 
 # {{< linking "代数结构" >}} <button onclick="toggleContent('content2')" id="button1"></button>
 <div id="content2" style="display:none;">
-    {{< include "代数结构/index.md" >}}
+    {{< include "代数结构/index_.md" >}}
 </div>
 
 # {{< linking "图论" >}} <button onclick="toggleContent('content3')" id="button1"></button>
 <div id="content3" style="display:none;">
-    {{< include "图论/index.md" >}}
+    {{< include "图论/index_.md" >}}
 </div>
 
 <style>

@@ -13,7 +13,7 @@ categories: ["学习笔记"]
 tags: ["离散数学", "计算机科学"]
 ---
 # {{< linking "数理逻辑/命题逻辑" >}}
-{{< include "数理逻辑/命题逻辑/index.md" >}}
+{{< include "数理逻辑/命题逻辑/index_.md" >}}
 
 # {{< linking "数理逻辑/一阶谓词逻辑" >}}
-{{< include "数理逻辑/一阶谓词逻辑/index.md" >}}
+{{< include "数理逻辑/一阶谓词逻辑/index_.md" >}}

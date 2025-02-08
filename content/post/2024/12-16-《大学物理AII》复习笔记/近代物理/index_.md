@@ -13,10 +13,10 @@ categories: ["学习笔记"]
 tags: ["大学物理", "近代物理"]
 ---
 # {{< linking "近代物理/狭义相对论力学基础" >}}
-{{< include "近代物理/狭义相对论力学基础/index.md" >}}
+{{< include "近代物理/狭义相对论力学基础/index_.md" >}}
 
 # {{< linking "近代物理/微观粒子的波粒二象性" >}}
-{{< include "近代物理/微观粒子的波粒二象性/index.md" >}}
+{{< include "近代物理/微观粒子的波粒二象性/index_.md" >}}
 
 # {{< linking "近代物理/薛定谔方程及其应用" >}}
-{{< include "近代物理/薛定谔方程及其应用/index.md" >}}
+{{< include "近代物理/薛定谔方程及其应用/index_.md" >}}

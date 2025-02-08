@@ -13,15 +13,15 @@ categories: ["学习笔记"]
 tags: ["大学物理", "电磁学"]
 ---
 ## {{< linking "电磁学/静电场/库仑定律" >}}
-{{< include "电磁学/静电场/库仑定律/index.md" >}}
+{{< include "电磁学/静电场/库仑定律/index_.md" >}}
 
 ## {{< linking "电磁学/静电场/电场" >}}
-{{< include "电磁学/静电场/电场/index.md" >}}
+{{< include "电磁学/静电场/电场/index_.md" >}}
 
 ## {{< linking "电磁学/静电场/静电场的高斯定理" >}}
-{{< include "电磁学/静电场/静电场的高斯定理/index.md" >}}
+{{< include "电磁学/静电场/静电场的高斯定理/index_.md" >}}
 
 ## {{< linking "电磁学/静电场/静电场的环路定理与电势" >}}
-{{< include "电磁学/静电场/静电场的环路定理与电势/index.md" >}}
+{{< include "电磁学/静电场/静电场的环路定理与电势/index_.md" >}}
 ## {{< linking "电磁学/静电场/电偶极子" >}}
-{{< include "电磁学/静电场/电偶极子/index.md" >}}
+{{< include "电磁学/静电场/电偶极子/index_.md" >}}
