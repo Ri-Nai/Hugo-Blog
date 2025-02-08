@@ -8,7 +8,7 @@ hidden: true
 ---
 
 
-### 线段树
+## 线段树
 ##### 线段树是一种二叉搜索树,与区间树相似,它将一个区间划分成一些单元区间,每个单元区间对应线段树中的一个叶结点.
 ##### 使用线段树可以快速的查找某一个节点在若干条线段中出现的次数,时间复杂度为$O(logN)$,而未优化的空间复杂度为2N,实际应用时一般还要开4N的数组以免越界,因此有时需要离散化让空间压缩.
 --摘自[百度百科](https://baike.baidu.com/item/%E7%BA%BF%E6%AE%B5%E6%A0%91)  
@@ -161,36 +161,36 @@ ll query(int L,int R,int p)
 线段树不但可以解决区间求和问题,还可以解决区间最值问题(将sum的更新改为max和min值的更新就可以了),区间连续和问题(存从左开始的连续和,从右开始的连续和,以及最大连续和,和分治思想类似,需要从儿子up答案),区间存在问题(在线段树上二分,存在的区间)等等...  
 涉及到前缀的都可以先想树状数组,涉及到区间的再想线段树就可以了.  
 为什么呢?
-#### 线段树的常数太他妈大了,爷$O(nlog^2(n))$的树状数组比他们$O(nlog(n))$的线段树还快,爷的线段树的时间可以达到树状数组的四倍,用线段树之前想想能不能用树状数组,不然是找TLE的吗?
-### 专题题目
-#### [A.HDU 1166](http://acm.hdu.edu.cn/showproblem.php?pid=1166)  
+### 线段树的常数太他妈大了,爷$O(nlog^2(n))$的树状数组比他们$O(nlog(n))$的线段树还快,爷的线段树的时间可以达到树状数组的四倍,用线段树之前想想能不能用树状数组,不然是找TLE的吗?
+## 专题题目
+### [A.HDU 1166](http://acm.hdu.edu.cn/showproblem.php?pid=1166)  
 线段树板子题,单点更新区间求和.  
-#### [B.HDU 1754](http://acm.hdu.edu.cn/showproblem.php?pid=1754)  
+### [B.HDU 1754](http://acm.hdu.edu.cn/showproblem.php?pid=1754)  
 线段树板子题,单点更新区间求最值.  
-#### [C.POJ 3468](http://poj.org/problem?id=3468)  
+### [C.POJ 3468](http://poj.org/problem?id=3468)  
 线段树板子题,区间更新区间求和.  
-#### [D.HDU 2665](http://acm.hdu.edu.cn/showproblem.php?pid=2665)  
+### [D.HDU 2665](http://acm.hdu.edu.cn/showproblem.php?pid=2665)  
 归并树,线段树内存有序的vector,进行归并.在外部二分查找符合的数,在vector内二分寻找比x小的数.有点卡常,垃圾题目  
-#### [E.HDU 2795](http://acm.hdu.edu.cn/showproblem.php?pid=2795)  
+### [E.HDU 2795](http://acm.hdu.edu.cn/showproblem.php?pid=2795)  
 线段树上二分,找第一个$>x$的点,当h比n大的时候,多余的h是没用的,可以舍去  
-#### [F.HihoCoder 1079](https://hihocoder.com/problemset/problem/1079)  
+### [F.HihoCoder 1079](https://hihocoder.com/problemset/problem/1079)  
 线段树上区间覆盖,离散化注意左右端点就可以了(203数据真水)
-#### [G.POJ 2452](http://poj.org/problem?id=2452)  
+### [G.POJ 2452](http://poj.org/problem?id=2452)  
 枚举左端点，发现题目所求的答案是不符合二分答案的性质的，但是可以二分找到一段数值全部大于左端点的区间，在这段区间内找最大的数值的位置。
-#### [H.HDU 3308](http://acm.hdu.edu.cn/showproblem.php?pid=3308)  
+### [H.HDU 3308](http://acm.hdu.edu.cn/showproblem.php?pid=3308)  
 可修改的最大连续和,要判断边界是否可以满足最大连续和的要求就可以了
-#### [I.SPOJ 1716 GSS3](https://www.spoj.com/problems/GSS3/en/)
+### [I.SPOJ 1716 GSS3](https://www.spoj.com/problems/GSS3/en/)
 最大连续和,比H还简单
-#### [J.POJ 2892](http://poj.org/problem?id=2452)  
+### [J.POJ 2892](http://poj.org/problem?id=2452)  
 别人在线段树上二分的代码我看不懂,所以就写了一个在外面二分,找该节点最左边界和最右边界.时间复杂度$O(nlog^2(n))$,树状数组跑的飞快,比他们线段树上二分跑的还快,线段树是刚好卡过去的.
-#### [K.POJ 3667](http://poj.org/problem?id=3667)
+### [K.POJ 3667](http://poj.org/problem?id=3667)
 线段树上二分.找第一个最大连续和出现的位置
-#### [L.SPOJ 2916 GSS5](https://www.spoj.com/problems/GSS5/en/)  
+### [L.SPOJ 2916 GSS5](https://www.spoj.com/problems/GSS5/en/)  
 相交的部分与不相交的部分分别判,就可以轻松A掉这道nt最大连续和  
-#### [M.HDU 5141](http://acm.hdu.edu.cn/showproblem.php?pid=5141)
+### [M.HDU 5141](http://acm.hdu.edu.cn/showproblem.php?pid=5141)
 离散化数值后建一棵权值线段树,在$[1,A[i]-1]$中查找最长子序列$lis$,再以此$lis+1$ 更新$A[i]$节点.对于一个$lis$,记录他的长度与起始位置,便于记录答案.
-#### [N.POJ 1769](http://poj.org/problem?id=1769)
+### [N.POJ 1769](http://poj.org/problem?id=1769)
 挺水的一道dp,离散化也不用.用线段树找到当前区间之前的存的最小值,然后再更新右端点的最小值就可以了
-#### [O.HDU 2871](http://acm.hdu.edu.cn/showproblem.php?pid=2871) [P.BZOJ 1858](https://darkbzoj.tk/problem/1858)
+### [O.HDU 2871](http://acm.hdu.edu.cn/showproblem.php?pid=2871) [P.BZOJ 1858](https://darkbzoj.tk/problem/1858)
 没什么好说的纯模拟.  
 [专题代码](http://private.vjudge.net/contest/324532#status/Ri_Nai/-/1/)
