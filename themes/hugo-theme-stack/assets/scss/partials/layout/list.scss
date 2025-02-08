@@ -47,12 +47,11 @@
 }
 
 .subsection-list {
-    overflow-x: visible;
-
+    overflow-x: auto;
+    padding: 15px 0px;
     .article-list--tile {
         display: flex;
-        padding-bottom: 15px;
-
+        
         article {
             width: 250px;
             height: 150px;
