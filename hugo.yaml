@@ -31,8 +31,10 @@ services:
         id:
 
 permalinks:
-    post: /:slug/
+    post: /post/:slug/
     page: /:slug/
+    # section: /p/:section/:slug/
+
 params:
     mainSections:
         - post
