@@ -1,32 +1,28 @@
 ---
-title: "《大学物理AII》复习笔记"
-slug: "2024/12 16 《大学物理AII》复习笔记"
+title: "《数据结构与算法设计》复习笔记"
+slug: "2025/01 06 《数据结构与算法设计》复习笔记"
 description:
-date: "2024-12-16T20:59:12+08:00"
-lastmod: "2024-12-16T20:59:12+08:00"
-image: cover.jpg
+date: "2025-01-06T11:13:33+08:00"
+lastmod: "2025-01-06T11:13:33+08:00"
+# image: cover.png
+image: 2025/01-06-数据结构与算法设计复习笔记/cover.png
 math:
 license:
 hidden: false
 draft: false
 categories: ["学习笔记"]
-tags: ["大学物理", "电磁学", "近代物理"]
+tags: ["数据结构与算法设计", "计算机科学", "数据结构", "算法设计", "计算理论"]
 ---
 
-# {{< linking "电磁学" >}} <button onclick="toggleContent('content0')" id="button0"></button>
+# {{< linking "数据结构" >}} <button onclick="toggleContent('content0')" id="button0"></button>
 <div id="content0" style="display:none;">
-    {{< include "电磁学/index.md" >}}
+{{< include "数据结构/index_.md" >}}
 </div>
 
-<!-- # {{< linking "电磁学/常用公式" >}} <button onclick="toggleContent('content2')" id="button2"></button>
-<div id="content2" style="display:none;">
-    {{< include "电磁学/常用公式/index.md" >}}
-</div> -->
 
-
-# {{< linking "近代物理" >}} <button onclick="toggleContent('content1')" id="button1"></button>
+# {{< linking "计算理论" >}} <button onclick="toggleContent('content1')" id="button1"></button>
 <div id="content1" style="display:none;">
-    {{< include "近代物理/index.md" >}}
+{{< include "计算理论/index_.md" >}}
 </div>
 
 <style>
@@ -70,6 +66,7 @@ tags: ["大学物理", "电磁学", "近代物理"]
         background-color: #EF6C00; /* Darker orange on hover when active */
     }
 </style>
+
 
 <script>
     function toggleContent(id) {

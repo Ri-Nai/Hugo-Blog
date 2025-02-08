@@ -13,10 +13,10 @@ categories: ["学习笔记"]
 tags: ["离散数学", "计算机科学"]
 ---
 # {{< linking "集合论/集合代数" >}}
-{{< include "集合论/集合代数/index.md" >}}
+{{< include "集合论/集合代数/index_.md" >}}
 
 # {{< linking "集合论/二元关系" >}}
-{{< include "集合论/二元关系/index.md" >}}
+{{< include "集合论/二元关系/index_.md" >}}
 
 # {{< linking "集合论/函数" >}}
-{{< include "集合论/函数/index.md" >}}
+{{< include "集合论/函数/index_.md" >}}
