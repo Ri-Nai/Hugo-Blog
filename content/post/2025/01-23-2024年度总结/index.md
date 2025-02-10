@@ -290,7 +290,7 @@ tags: ["年度总结"]
 ![](8c2040dffb9a1bc9627590a2b6fbf819_720.jpg)
 ## 小学期大作业
 
-{{< linkpage "https://github.com/Ri-Nai/Portal-2D" "乐奈与抹茶奇境：传送" "" "/links/Rana.png" >}}
+{{< linkpage "https://github.com/Ri-Nai/Portal-2D" "乐奈与抹茶奇境：传送" "" "/Hugo-Blog/links/Rana.png" >}}
 
 {{< bilibili BV1rv1mYWEn2 >}}
 
