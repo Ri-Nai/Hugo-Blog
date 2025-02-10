@@ -69,6 +69,8 @@
             }
         }
     </style>
+{{ $rel_path := "/aya_event217/aya_event217.model.json" }}
+{{ $path := path.Join (.Site.BaseURL | relLangURL) $rel_path }}
 
     <script>
         document.addEventListener('DOMContentLoaded', async function () {
@@ -81,7 +83,8 @@
             });
 
             try {
-                const model2 = await PIXI.live2d.Live2DModel.from("/aya_event217/aya_event217.model.json");
+                const model2 = await PIXI.live2d.Live2DModel.from({{ $path }});
+                console.log({{ $path }})
                 app.stage.addChild(model2);
                 model2.scale.set(0.15);
                 model2.x = -25;
