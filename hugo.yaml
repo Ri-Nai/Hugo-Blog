@@ -1,4 +1,4 @@
-baseurl: https://ri-nai.github.io
+baseurl: https://ri-nai.github.io/Hugo-Blog/
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 6
