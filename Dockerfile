@@ -1,5 +1,5 @@
 # 使用 Hugo 构建静态站点
-FROM hugomods/hugo:std-exts-0.128.0 AS builder
+FROM hugomods/hugo:exts-0.128.0 AS builder
 WORKDIR /src
 # 复制整个项目
 COPY . .
