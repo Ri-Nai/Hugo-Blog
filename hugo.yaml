@@ -1,4 +1,4 @@
-baseurl: https://ri-nai.github.io/Hugo-Blog/
+baseURL: https://ri-nai.github.io/Hugo-Blog/
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 6
@@ -40,7 +40,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /Hugo-Blog/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since:
