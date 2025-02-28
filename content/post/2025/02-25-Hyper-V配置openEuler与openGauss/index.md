@@ -116,19 +116,34 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ### 软件环境
 
-好像我只安装了 python3
+#### 安装了 python3
 
 ```bash
 sudo yum install -y python3.11
 alias python=python3
 ```
 
-提前建立软件目录
+#### 提前建立软件目录
 
 ```bash
 sudo mkdir -p /opt/software/openGauss
 sudo chmod -R 777 /opt/software/openGauss # 不然会有权限问题，我也不知道到底在哪所以就直接 chmod 777 了
 ```
+#### 关闭防火墙
+
+```bash
+# 禁用 selinux
+vim /etc/selinux/config
+SELINUX=disabled
+# 重启
+reboot
+# 关闭防火墙
+systemctl disable firewalld.service
+systemctl stop firewalld.service
+# 查看状态
+systemctl status firewalld
+```
+
 
 ### 安装 openGauss
 
