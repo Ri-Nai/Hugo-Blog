@@ -175,7 +175,16 @@ gs_ctl query -D /opt/software/openGauss/data/single_node
 
 ### 连接数据库
 
-待更新
+```bash
+gsql -d postgres # -p 5432 默认以 5432 端口连接
+                 # -U ri_nai 用 ri_nai 用户连接
+```
+`postgres` 是默认数据库，但是进去之后会显示 `opengauss=#`，哎无耻之人。
+可以在 Windows 下安装一个 `psql`，然后用 `psql` 连接。
+
+```bash
+psql -h <your-ip> -p 5432 -U ri_nai -d postgres
+```
 
 ## pgAdmin4 连接 openGauss
 {{< linkpage "https://www.pgadmin.org/" "pgAdmin4" "" "https://www.pgadmin.org/static/COMPILED/assets/img/favicon.ico" >}}
@@ -190,3 +199,44 @@ pgAdmin4 是一个开源的数据库管理工具，用于管理 PostgreSQL 和�
 
 在远程连接之前，需要更改 openGauss 的配置文件以便有权限连接。
 
+```bash
+vim /opt/software/openGauss/data/single_node/postgresql.conf
+
+# 加入一条
+listen_addresses = '*' # 允许所有地址连接
+# 找到 password_encryption，改为 1
+password_encryption_type = 1 # Password storage type, 0 is md5 for PG, 1 is sha256 + md5, 2 is sha256 only
+```
+解释：`listen_addresses` 允许所有地址连接，`password_encryption_type` 设置密码加密方式。 
+具体为什么要用 `sha256 + md5` 我忘了，前两天找博客和 AI 的时候看到的。  
+好像是因为 openGauss 想用 `sha256`，但是 pgAdmin4 只支持 `md5`，所以用了 `sha256 + md5`，不然会报错。
+
+{{< linkpage "https://opengauss.org/zh/blogs/gaoyunlong/openGauss%E4%B8%8Epostgresql%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%B7%AE%E5%BC%82.html" "可能的参考文献" "openGauss 与 postgresql 日常使用差异" "https://opengauss.org/favicon.ico" >}}
+
+```bash
+vim /opt/software/openGauss/data/single_node/pg_hba.conf
+
+# 在文件末尾加入
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+# "local" is for Unix domain socket connections only
+host    all             all             <your-ip>/32            sha256
+# 这里的 <your-ip> 是你的 IP 地址
+# 可以在 PowerShell 里面输入 ipconfig 查看对应网卡的 IP 地址
+```
+
+然后重启数据库
+
+```bash
+gs_ctl restart -D /opt/software/openGauss/data/single_node -Z single_node
+```
+
+### 连接 pgAdmin4
+
+打开 pgAdmin4，新建一个服务器
+地址是 openGauss 的 IP 地址（在打开终端的时候可以看到）
+用户名不能以超级管理员登录，得在 openGauss 里面创建一个用户。
+
+```postgresql
+CREATE USER ri_nai WITH PASSWORD 'xxxx';
+```
+然后在 pgAdmin4 里面用 `ri_nai` 登录。
