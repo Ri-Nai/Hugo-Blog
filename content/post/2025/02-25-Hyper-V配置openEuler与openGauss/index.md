@@ -158,6 +158,7 @@ tar -jxf openGauss-Server-6.0.1-openEuler22.03-x86_64.tar.bz2 -C /opt/software/o
 
 cd /opt/software/openGauss
 # 必须要用 bash，因为他 install.sh 里有一堆 .bashrc 的操作
+# "xxxx" 是你的密码
 bash install.sh  -w "xxxx" -p 5432 &&source ~/.bashrc
 ```
 至此，openGauss 安装完成。
@@ -174,4 +175,18 @@ gs_ctl query -D /opt/software/openGauss/data/single_node
 
 ### 连接数据库
 
-还没学会，就不写了。
+待更新
+
+## pgAdmin4 连接 openGauss
+{{< linkpage "https://www.pgadmin.org/" "pgAdmin4" "" "https://www.pgadmin.org/static/COMPILED/assets/img/favicon.ico" >}}
+
+pgAdmin4 是一个开源的数据库管理工具，用于管理 PostgreSQL 和其他数据库。有可视化界面，可以方便的管理数据库。
+
+由于 openGauss 是基于 PostgreSQL 的，所以 pgAdmin4 可以连接 openGauss。
+
+高版本的 pgAdmin4 无法兼容 openGauss，所以我随便找了个低版本的 [v4.30](https://pgadmin-archive.postgresql.org/pgadmin4/v4.30/windows/index.html)。
+
+### 更改配置
+
+在远程连接之前，需要更改 openGauss 的配置文件以便有权限连接。
+
