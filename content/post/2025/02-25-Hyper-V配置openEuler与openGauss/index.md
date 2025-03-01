@@ -240,3 +240,17 @@ gs_ctl restart -D /opt/software/openGauss/data/single_node -Z single_node
 CREATE USER ri_nai WITH PASSWORD 'xxxx';
 ```
 然后在 pgAdmin4 里面用 `ri_nai` 登录。
+
+数据表都在 `public` 的 `schema` 里面。
+
+## DataGrip 连接 openGauss
+
+由于自己有图形化界面连接 mysql 的需求，所以顺手试了一下 DataGrip。
+
+DataGrip 是 JetBrains 出品的数据库管理工具，支持多种数据库，包括 PostgreSQL。
+
+因为自己有 JetBrains 的学生账号，所以可以免费使用 DataGrip。JB门 🙏。
+
+{{< linkpage "https://www.jetbrains.com/datagrip/" "DataGrip" "" "https://resources.jetbrains.com/storage/products/company/brand/logos/DataGrip_icon.png" >}}
+
+然后因为上面的配置已经完成，所以直接连接就行了。
