@@ -4,7 +4,7 @@ slug: "2025/01/06/《离散数学》复习笔记"
 description:
 date: "2025-01-06T11:13:33+08:00"
 lastmod: "2025-01-06T11:13:33+08:00"
-image: post/2025/01-06-离散数学复习笔记/cover.png
+image: post/2025/01/06/离散数学复习笔记/cover.png
 math:
 license:
 hidden: false

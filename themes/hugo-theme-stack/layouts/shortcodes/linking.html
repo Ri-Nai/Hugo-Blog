@@ -25,7 +25,7 @@
 {{ $rel_slug := "" }}
 
 {{ range $index, $part := $slugs }}
-    {{ if gt $index 1 }}
+    {{ if gt $index 3 }}
         {{ $rel_slug = print $rel_slug "/" $part }}
     {{ end }}
 {{ end }}
