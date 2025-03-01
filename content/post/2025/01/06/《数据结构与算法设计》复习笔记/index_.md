@@ -5,7 +5,7 @@ description:
 date: "2025-01-06T11:13:33+08:00"
 lastmod: "2025-01-06T11:13:33+08:00"
 # image: cover.png
-image: post/2025/01-06-数据结构与算法设计复习笔记/cover.png
+image: post/2025/01/06/数据结构与算法设计复习笔记/cover.png
 math:
 license:
 hidden: false
