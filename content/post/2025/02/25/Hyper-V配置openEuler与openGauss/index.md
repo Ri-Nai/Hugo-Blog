@@ -60,7 +60,22 @@ ssh reina@<your-ip>
     ```bash
     sudo yum install -y tar
     ```
-2. 
+2. 后面的忘记写了，好像过了这关问题不大了。  
+    如果还有问题的话可以先在虚拟机里改下设置：
+    ```bash
+    sudo vim /etc/ssh/sshd_config
+    # 找到 如下内容 取消注释
+    Port 22
+    AddressFamily any
+    ListenAddress 0.0.0.0
+    ListenAddress ::
+    # 找到 PasswordAuthentication，改为 yes 或取消注释
+    PasswordAuthentication yes
+    # 找到 PermitRootLogin，改为 yes 或取消注释
+    PermitRootLogin yes
+    # 重启 sshd
+    sudo systemctl restart sshd
+    ```
 
 ### 安装 zsh
 
