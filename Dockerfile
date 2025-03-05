@@ -9,6 +9,6 @@ RUN hugo --minify --baseURL "https://ri-nai.github.io/Hugo-Blog/"
 # 使用 Nginx 来托管静态文件
 FROM nginx:stable-alpine
 # 将构建产物复制到 Nginx 的 web 目录
-COPY --from=builder /src/public /usr/share/nginx/html
+COPY --from=builder /src/public /usr/share/nginx/html/Hugo-Blog
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
