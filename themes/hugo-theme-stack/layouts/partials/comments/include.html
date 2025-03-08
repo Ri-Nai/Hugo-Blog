@@ -1,15 +1,51 @@
-<script src="https://giscus.app/client.js"
-        data-repo="Ri-Nai/Hugo-Blog"
-        data-repo-id="R_kgDOMWlKQA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOMWlKQM4Cm03t"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="noborder_dark"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
+<!-- <script 
+src="https://giscus.app/client.js"
+data-repo="Ri-Nai/Hugo-Blog" 
+data-repo-id="R_kgDOMWlKQA"
+data-category="Announcements"
+data-category-id="DIC_kwDOMWlKQM4Cm03t"
+data-mapping="pathname" 
+data-strict="0"
+data-reactions-enabled="1"
+data-emit-metadata="0"
+data-input-position="bottom"
+data-theme="noborder_dark"
+data-lang="zh-CN"
+crossorigin="anonymous" async>
+</script> -->
+<div class="giscus">
+    <script>
+        const container = document.querySelector('.giscus');
+        const scheme = document.documentElement.dataset.scheme;
+        const darkMode = scheme === 'dark';
+        // giscus is a script element
+        // const giscusScript = document.createElement('script');
+        const giscusScript = document.createElement('script');
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', 'Ri-Nai/Hugo-Blog');
+        giscusScript.setAttribute('data-repo-id', 'R_kgDOMWlKQA');
+        giscusScript.setAttribute('data-category', 'Announcements');
+        giscusScript.setAttribute('data-category-id', 'DIC_kwDOMWlKQM4Cm03t');
+        giscusScript.setAttribute('data-mapping', 'pathname');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '1');
+        giscusScript.setAttribute('data-emit-metadata', '0');
+        giscusScript.setAttribute('data-input-position', 'bottom');
+        giscusScript.setAttribute('data-theme', darkMode ? 'noborder_dark' : 'noborder_light');
+        giscusScript.setAttribute('data-lang', 'zh-CN');
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        document.body.appendChild(giscusScript);
+        document.body.addEventListener('setDarkMode', (e) => {
+            const iframe = document.querySelector('iframe.giscus-frame');
+            if (!iframe) return;
+            iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('setLightMode', (e) => {
+            const iframe = document.querySelector('iframe.giscus-frame');
+            if (!iframe) return;
+            iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+
+        });
+    </script>
+</div>
