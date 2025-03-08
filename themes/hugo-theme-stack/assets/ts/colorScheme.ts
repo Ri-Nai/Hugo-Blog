@@ -56,9 +56,13 @@ class StackColorScheme {
 
     private setBodyClass() {
         if (this.isDark()) {
+            // add custom event set to dark
+            document.body.dispatchEvent(new CustomEvent('setDarkMode'));
             document.documentElement.dataset.scheme = 'dark';
         }
         else {
+            // add custom event set to light
+            document.body.dispatchEvent(new CustomEvent('setLightMode'));
             document.documentElement.dataset.scheme = 'light';
         }
 
