@@ -193,7 +193,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ![](imgs/腾讯云远程桌面.png)
 
+填入用户名和密码，即可连接
+
 ![](imgs/远程桌面登录界面.png)
+
+连接成功
 
 ![](imgs/windows-server网页端.png)
 
@@ -206,5 +210,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 连接时修改 `更多选项` 将，`用户名` 和 `密码` 填入
 
 ![](imgs/凭证.png)
+
+连接成功
 
 ![](imgs/成功连接.png)
