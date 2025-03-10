@@ -9,6 +9,8 @@ math:
 license:
 hidden: false
 draft: false
-categories: [""]
-tags: [""]
+categories: 
+    -
+tags: 
+    -
 ---
