@@ -1,9 +1,9 @@
 ---
 title: "《数据库设计与开发》实验一：建立数据库"
-slug: "2025/03/31/《数据库设计与开发》实验一：建立数据库"
+slug: "2025/04/30/《数据库设计与开发》实验一：建立数据库"
 description:
-date: "2025-03-31T20:03:15+08:00"
-lastmod: "2025-03-31T20:03:15+08:00"
+date: "2025-04-30T20:03:15+08:00"
+lastmod: "2025-04-30T20:03:15+08:00"
 publishDate: "2025-04-30T20:03:15+08:00"
 #image: cover.png
 math:
@@ -485,15 +485,18 @@ sql 解释：
 ### 创建索引
 
 ```sql
-CREATE INDEX idx_xs_ydh ON xs(ydh);   -- 学生表 -> 院代号
-CREATE INDEX idx_kc_lx ON kc(lx);     -- 课程表 -> 类型
-CREATE INDEX idx_js_ydh ON js(ydh);   -- 教师表 -> 院代号
-CREATE INDEX idx_sk_bh ON sk(bh);     -- 授课表 -> 教师编号
-CREATE INDEX idx_xk_cj ON xk(cj);     -- 学生选课表 -> 成绩
+-- 这行不需要，因为主键本身就是索引
+-- CREATE INDEX idx_xyb_ydh ON xyb(ydh); -- 学院表 -> 院代号 
+CREATE INDEX idx_xs_ydh ON xs (ydh);     -- 学生表 -> 院代号
+CREATE INDEX idx_kc_lx ON kc (lx);       -- 课程表 -> 类型
+CREATE INDEX idx_js_ydh ON js (ydh);     -- 教师表 -> 院代号
+-- 这行不需要，因为复合主键也会自动创建索引
+-- CREATE INDEX idx_sk_bh ON sk(bh);     -- 授课表 -> 教师编号
+CREATE INDEX idx_xk_cj ON xk (cj);       -- 学生选课表 -> 成绩
 ```
 
 同样在 `public schema` 下创建了这些索引。  
-![创建的索引1](imgs/QQ_1743390329147.png)  
+![创建的索引1](imgs/QQ_1743428440093.png)  
 可以看到表里面已经创建了这些索引。  
 ![创建的索引2](imgs/QQ_1743390361266.png)
 
