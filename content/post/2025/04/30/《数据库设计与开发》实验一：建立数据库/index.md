@@ -11,9 +11,10 @@ license:
 hidden: false
 draft: false
 categories: 
-    -
+    - 学习笔记
+    - 实验报告
 tags: 
-    -
+    - 数据库
 ---
 
 ## 实验要求
